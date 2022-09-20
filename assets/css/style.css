@@ -1,18 +1,92 @@
-/* font-family: 'Barlow', sans-serif; */
-/* font-family: 'Creepster', cursive; */
+/* basic page formatting */
 
-html {
+* {
         padding: 0;
         margin: 0;
         border: 0;
-        background-origin: border-box;
         box-sizing: border-box;
 }
 
 h1 {
     font-family: 'Creepster', cursive;
+    font-size: 3rem;
+    letter-spacing: 4px;
 }
 
 body {
     font-family: 'Barlow', sans-serif;
+}
+
+/* landing page div styles */
+
+#heading {
+    margin: auto;
+    /* background-color: aquamarine; */
+    width: 320px;
+    height: 16vh;
+}
+
+#heading h1 {
+    text-align: center;
+    position: relative;
+    top: 15px;
+    color: rgba(141, 0, 0, 1);
+}
+
+#main {
+    margin: auto;
+    /* background-color: red; */
+    width: 320px;
+    height: 70vh;
+}
+
+#main p {
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+#footer {
+    margin: auto;
+    /* background-color: orange; */
+    width: 320px;
+    height: 14vh;
+}
+
+#footer p {
+    text-align: center;
+    position: relative;
+    font-size: 0.8rem;
+    top: 60%;
+}
+
+
+/* landing page media query */
+
+@media screen and (min-width: 768px) {
+    #heading {
+        margin: auto;
+        width: 768px;
+        height: 16vh;
+    }
+
+    #main {
+        margin: auto;
+        width: 768px;
+        height: 70vh;
+    }
+
+    #footer {
+        margin: auto;
+        width: 768px;
+        height: 14vh;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+    
+    body {
+        font-size: 1.2rem;
+    }
 }
