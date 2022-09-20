@@ -1,0 +1,18 @@
+/* font-family: 'Barlow', sans-serif; */
+/* font-family: 'Creepster', cursive; */
+
+html {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        background-origin: border-box;
+        box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Creepster', cursive;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
