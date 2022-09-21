@@ -1,11 +1,6 @@
-# **AGHAMORE TIDY VILLAGE**
+# **HORROR TOP TRUMPS**
 
-The site is for a community group of volunteers and the organisation which helps keep their village tidy. 
-
-The site is an imagined one for a real group that may require such a site in the near future. 
-Upon completion of the course and with further work it may become a live site, and was designed with this in mind.
-
-![](assets/images/readme_images/Tidy_Village_Amiresponsive.jpg)
+![]()
 
 -----------------------------------------
 
