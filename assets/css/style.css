@@ -66,6 +66,17 @@ body {
     top: 60%;
 }
 
+#scorearea {
+    margin: auto;
+    width: 320px;
+    height: 16vh;
+}
+
+#cardarea {
+    margin: auto;
+    width: 320px;
+    height: 70vh;
+}
 
 /* landing page media query */
 
