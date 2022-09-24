@@ -153,7 +153,7 @@ th, td {
     width: 1px;
     width: 1px;
     left: 50%;
-    top: 50%;
+    top: 20%;
     display: inline-block;
     cursor: pointer;
     -webkit-user-select: none;
@@ -234,5 +234,63 @@ th, td {
     
     body {
         font-size: 1.1rem;
+    }
+
+    #scorearea {
+        width: 700px;
+        height: 12vh;
+    }
+    
+    #playerscore {
+        width: 160px;
+        height: 12vh;
+    }
+    
+    #computerscore {
+        width: 160px;
+        height: 12vh;
+    }
+    
+    #cardarea {
+        width: 700px;
+    }
+    
+    .activecard {
+        display: inline-block;
+        width: 340px;
+        margin: 10px auto;
+        height: 500px;
+    }
+    
+    #playercard {
+        float: left;
+    }
+    
+    #computercard {
+        float: right;
+    }
+    
+    table {
+        margin: 25px auto;
+    }
+    
+    th, td {
+        text-align: left;
+        padding: 0 60px 0 0;
+        font-size: 1.2rem;
+    }
+    
+    .table-value {
+        padding: 0 0 0 60px;
+    }
+    
+    #name1, #name2 {
+        position: relative;
+        top: 10px;
+        font-size: 1.8rem;
+    }
+
+    .popup {
+        top: 60%;
     }
 }
