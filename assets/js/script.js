@@ -1,6 +1,6 @@
 const card = [{
     name: 'Dracula',
-    image: `<img src="assets/images/dracula-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/dracula-cardpic.png",
     ffactor: 78,
     kpower: 84,
     infamy: 98,
@@ -8,7 +8,7 @@ const card = [{
 },
 {
     name: 'Alien',
-    image: `<img src="assets/images/alien-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/alien-cardpic.png",
     ffactor: 86,
     kpower: 83,
     infamy: 84,
@@ -16,7 +16,7 @@ const card = [{
 },
 {
     name: 'Angela',
-    image: `<img src="assets/images/angela-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/angela-cardpic.png",
     ffactor: 83,
     kpower: 89,
     infamy: 72,
@@ -24,7 +24,7 @@ const card = [{
 },
 {
     name: 'Annabelle',
-    image: `<img src="assets/images/annabelle-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/annabelle-cardpic.png",
     ffactor: 87,
     kpower: 76,
     infamy: 81,
@@ -32,7 +32,7 @@ const card = [{
 },
 {
     name: 'Argento Demons',
-    image: `<img src="assets/images/argento-demons-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/argento-demons-cardpic.png",
     ffactor: 89,
     kpower: 86,
     infamy: 73,
@@ -40,7 +40,7 @@ const card = [{
 },
 {
     name: 'Art The Clown',
-    image: `<img src="assets/images/art-the-clown-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/art-the-clown-cardpic.png",
     ffactor: 87,
     kpower: 86,
     infamy: 69,
@@ -48,7 +48,7 @@ const card = [{
 },
 {
     name: 'Belial',
-    image: `<img src="assets/images/belial-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/belial-cardpic.png",
     ffactor: 76,
     kpower: 82,
     infamy: 73,
@@ -56,7 +56,7 @@ const card = [{
 },
 {
     name: 'Body Snatchers',
-    image: `<img src="assets/images/body-snatchers-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/body-snatchers-cardpic.png",
     ffactor: 90,
     kpower: 91,
     infamy: 82,
@@ -64,7 +64,7 @@ const card = [{
 },
 {
     name: 'Candyman',
-    image: `<img src="assets/images/candyman-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/candyman-cardpic.png",
     ffactor: 88,
     kpower: 89,
     infamy: 90,
@@ -72,7 +72,7 @@ const card = [{
 },
 {
     name: 'Carrie',
-    image: `<img src="assets/images/carrie-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/carrie-cardpic.png",
     ffactor: 79,
     kpower: 93,
     infamy: 81,
@@ -80,7 +80,7 @@ const card = [{
 },
 {
     name: 'Chucky',
-    image: `<img src="assets/images/chucky-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/chucky-cardpic.png",
     ffactor: 77,
     kpower: 84,
     infamy: 86,
@@ -88,7 +88,7 @@ const card = [{
 },
 {
     name: 'Dr Phibes',
-    image: `<img src="assets/images/dr-phibes-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/dr-phibes-cardpic.png",
     ffactor: 74,
     kpower: 85,
     infamy: 87,
@@ -96,7 +96,7 @@ const card = [{
 },
 {
     name: 'Evil Dead',
-    image: `<img src="assets/images/Evil-dead-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/Evil-dead-cardpic.png",
     ffactor: 89,
     kpower: 87,
     infamy: 83,
@@ -104,7 +104,7 @@ const card = [{
 },
 {
     name: 'Frankenstein',
-    image: `<img src="assets/images/Frankenstein-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/Frankenstein-cardpic.png",
     ffactor: 83,
     kpower: 79,
     infamy: 93,
@@ -112,7 +112,7 @@ const card = [{
 },
 {
     name: 'Freddy Krueger',
-    image: `<img src="assets/images/freddy-krueger-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/freddy-krueger-cardpic.png",
     ffactor: 83,
     kpower: 92,
     infamy: 88,
@@ -120,7 +120,7 @@ const card = [{
 },
 {
     name: 'Hannibal Lecter',
-    image: `<img src="assets/images/hannibal-lecter-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/hannibal-lecter-cardpic.png",
     ffactor: 90,
     kpower: 85,
     infamy: 80,
@@ -128,7 +128,7 @@ const card = [{
 },
 {
     name: 'Jack Torance',
-    image: `<img src="assets/images/Jack-Torance-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/Jack-Torance-cardpic.png",
     ffactor: 82,
     kpower: 79,
     infamy: 89,
@@ -136,7 +136,7 @@ const card = [{
 },
 {
     name: 'Jason Vorhees',
-    image: `<img src="assets/images/Jason-Vorhees-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/Jason-Vorhees-cardpic.png",
     ffactor: 87,
     kpower: 96,
     infamy: 87,
@@ -144,7 +144,7 @@ const card = [{
 },
 {
     name: 'Jigsaw',
-    image: `<img src="assets/images/jigsaw-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/jigsaw-cardpic.png",
     ffactor: 78,
     kpower: 86,
     infamy: 82,
@@ -152,7 +152,7 @@ const card = [{
 },
 {
     name: 'Leatherface',
-    image: `<img src="assets/images/leatherface-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/leatherface-cardpic.png",
     ffactor: 88,
     kpower: 90,
     infamy: 86,
@@ -160,7 +160,7 @@ const card = [{
 },
 {
     name: 'Leprechaun',
-    image: `<img src="assets/images/Leprechaun-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/Leprechaun-cardpic.png",
     ffactor: 82,
     kpower: 78,
     infamy: 79,
@@ -168,7 +168,7 @@ const card = [{
 },
 {
     name: 'Michael Myers',
-    image: `<img src="assets/images/michaelmyers-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/michaelmyers-cardpic.png",
     ffactor: 92,
     kpower: 90,
     infamy: 92,
@@ -176,7 +176,7 @@ const card = [{
 },
 {
     name: 'Nosferatu',
-    image: `<img src="assets/images/nosferatu-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/nosferatu-cardpic.png",
     ffactor: 90,
     kpower: 83,
     infamy: 85,
@@ -184,7 +184,7 @@ const card = [{
 },
 {
     name: 'Pazuzu',
-    image: `<img src="assets/images/pazuzu-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/pazuzu-cardpic.png",
     ffactor: 91,
     kpower: 79,
     infamy: 90,
@@ -192,7 +192,7 @@ const card = [{
 },
 {
     name: 'Pennywise',
-    image: `<img src="assets/images/Pennywise-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/Pennywise-cardpic.png",
     ffactor: 96,
     kpower: 79,
     infamy: 89,
@@ -200,7 +200,7 @@ const card = [{
 },
 {
     name: 'Pinhead',
-    image: `<img src="assets/images/pinhead-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/pinhead-cardpic.png",
     ffactor: 89,
     kpower: 81,
     infamy: 90,
@@ -208,7 +208,7 @@ const card = [{
 },
 {
     name: 'Pumpkinhead',
-    image: `<img src="assets/images/pumpkinhead-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/pumpkinhead-cardpic.png",
     ffactor: 80,
     kpower: 78,
     infamy: 78,
@@ -216,7 +216,7 @@ const card = [{
 },
 {
     name: 'Sadako',
-    image: `<img src="assets/images/Sadako-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/Sadako-cardpic.png",
     ffactor: 85,
     kpower: 78,
     infamy: 91,
@@ -224,7 +224,7 @@ const card = [{
 },
 {
     name: 'Scanners',
-    image: `<img src="assets/images/Scanners-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/Scanners-cardpic.png",
     ffactor: 78,
     kpower: 83,
     infamy: 74,
@@ -232,7 +232,7 @@ const card = [{
 },
 {
     name: 'Tetsuo',
-    image: `<img src="assets/images/tetsuo-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/tetsuo-cardpic.png",
     ffactor: 79,
     kpower: 83,
     infamy: 70,
@@ -240,7 +240,7 @@ const card = [{
 },
 {
     name: 'The Blob',
-    image: `<img src="assets/images/the-blob-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/the-blob-cardpic.png",
     ffactor: 74,
     kpower: 82,
     infamy: 80,
@@ -248,7 +248,7 @@ const card = [{
 },
 {
     name: 'Driller Killer',
-    image: `<img src="assets/images/the-driller-killer-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/the-driller-killer-cardpic.png",
     ffactor: 78,
     kpower: 77,
     infamy: 83,
@@ -256,7 +256,7 @@ const card = [{
 },
 {
     name: 'The Fly',
-    image: `<img src="assets/images/the-fly-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/the-fly-cardpic.png",
     ffactor: 86,
     kpower: 81,
     infamy: 80,
@@ -264,7 +264,7 @@ const card = [{
 },
 {
     name: 'The Red Death',
-    image: `<img src="assets/images/the-red-death-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/the-red-death-cardpic.png",
     ffactor: 78,
     kpower: 77,
     infamy: 86,
@@ -272,7 +272,7 @@ const card = [{
 },
 {
     name: 'The Thing',
-    image: `<img src="assets/images/the-thing-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/the-thing-cardpic.png",
     ffactor: 84,
     kpower: 86,
     infamy: 79,
@@ -280,7 +280,7 @@ const card = [{
 },
 {
     name: 'Us',
-    image: `<img src="assets/images/us-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/us-cardpic.png",
     ffactor: 89,
     kpower: 80,
     infamy: 82,
@@ -288,7 +288,7 @@ const card = [{
 },
 {
     name: 'Wishmaster',
-    image: `<img src="assets/images/wishmaster-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/wishmaster-cardpic.png",
     ffactor: 77,
     kpower: 76,
     infamy: 78,
@@ -296,7 +296,7 @@ const card = [{
 },
 {
     name: 'Wolfman',
-    image: `<img src="assets/images/Wolfman-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/Wolfman-cardpic.png",
     ffactor: 82,
     kpower: 77,
     infamy: 95,
@@ -304,10 +304,12 @@ const card = [{
 },
 {
     name: 'Zombie Flesh Eaters',
-    image: `<img src="assets/images/zombie-flesh-eaters-cardpic.png" alt="" srcset="">`,
+    image: "assets/images/zombie-flesh-eaters-cardpic.png",
     ffactor: 81,
     kpower: 77,
     infamy: 88,
     persistence: 90,
 },
 ];
+
+
