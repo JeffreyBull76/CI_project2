@@ -77,16 +77,16 @@ body {
 /* game page styles */
 
 #scorearea {
-    width: 700px;
+    width: 320px;
     margin: auto;
-    height: 10vh;
+    height: 8vh;
     background-color: brown;
 }
 
 #playerscore {
     float: left;
-    width: 310px;
-    height: 10vh;
+    width: 160px;
+    height: 8vh;
     background-color: blueviolet;
     text-align: center;
 }
@@ -98,32 +98,30 @@ body {
 
 #computerscore {
     float: right;
-    width: 310px;
-    height: 10vh;
+    width: 160px;
+    height: 8vh;
     background-color: blueviolet;
     text-align: center;
 }
 
 #cardarea {
     margin: auto;
-    width: 700px;
-    height: 66vh;
+    width: 320px;
 }
 
 .activecard {
-    display: inline-block;
-    width: 310px;
-    height: 570px;
+    display: relative;
+    width: 240px;
+    margin: 10px auto;
+    height: 320px;
 }
 
 #playercard {
-    float: left;
     background-color: aqua;
     text-align: center;
 }
 
 #computercard {
-    float: right;
     background-color: blue;
     text-align: center;
 }
@@ -132,10 +130,15 @@ table {
     margin: 0 auto;
 }
 
-td, th {
+th, td {
     border: 1px solid #dddddd00;
     text-align: left;
-    padding: 10px;
+    padding: 0 40px 0 0;
+    font-size: 1rem;
+}
+
+.table-value {
+    padding: 0 0 0 40px;
 }
 
 #name1, #name2 {
