@@ -315,12 +315,12 @@ const card = [{
 // When the user clicks on div, open the popup
 // code taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup
 
-// function myFunction() {
-//     var popup = document.getElementById("myPopup");
-//     popup.classList.toggle("show");
-// }
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
 
-// myFunction();
+myFunction();
 
 // <div class="popup" onclick="myFunction()">Click me to toggle the popup!
 // <span class="popuptext" id="myPopup">A Simple Popup!</span>
@@ -348,11 +348,14 @@ const computerWins = [];
 shuffle(card);  
 
 let playerDeck = card.slice(0, 20);
-let computerDeck = card.slice(20, 40);
+let computerDeck = card.slice(19, 40);
 
 function playCards (event) {
     let activePlayerCard = playerDeck[0];
     let activeComputerCard = computerDeck[0];
+
+    console.log(playerDeck);
+    console.log(computerDeck);
 
     document.getElementById('myPopup').innerText = '';
 
@@ -375,8 +378,8 @@ function playCards (event) {
 
         document.getElementById('name1').innerText = activePlayerCard.name;
         document.getElementById('playercard').children[2].outerHTML = `<picture> 
-        <source media="(max-width: 799px)" srcset=${activePlayerCard.image} width="50" height="50">
-        <img src=${activePlayerCard.image} alt="working resize test" width="100" height="100">
+        <source media="(max-width: 799px)" srcset=${activePlayerCard.image} width="180" height="180">
+        <img src=${activePlayerCard.image} alt="working resize test" width="280" height="280">
         </picture>`;
         document.getElementById('fearfactor1').innerText = activePlayerCard.ffactor;
         document.getElementById('killingpower1').innerText = activePlayerCard.kpower;
@@ -386,18 +389,18 @@ function playCards (event) {
         document.getElementById('name2').innerText = activeComputerCard.name;
         document.getElementById('name2').hidden = true;
         document.getElementById('computercard').children[2].outerHTML = `<picture> 
-        <source media="(max-width: 799px)" srcset=${activeComputerCard.image} width="50" height="50">
-        <img src=${activeComputerCard.image} alt="working resize test" width="100" height="100">
+        <source media="(max-width: 799px)" srcset=${activeComputerCard.image} width="180" height="180">
+        <img src=${activeComputerCard.image} alt="working resize test" width="280" height="280">
         </picture>`;
         document.getElementById('computercard').children[2].style.visibility = "hidden";
-        document.getElementById('fearfactor2').innerText = activeComputerCard.kpower;
-        document.getElementById('fearfactor2').hidden = true;
-        document.getElementById('killingpower2').innerText = activeComputerCard.ffactor;
-        document.getElementById('killingpower2').hidden = true;
-        document.getElementById('infamy2').innerText = activeComputerCard.hrating;
-        document.getElementById('infamy2').hidden = true;
-        document.getElementById('persistence2').innerText = activeComputerCard.pstrength;
-        document.getElementById('persistence2').hidden = true;
+        document.getElementById('fearfactor2').innerText = activeComputerCard.ffactor;
+        document.getElementById('fearfactor2').parentElement.hidden = true;
+        document.getElementById('killingpower2').innerText = activeComputerCard.kpower;
+        document.getElementById('killingpower2').parentElement.hidden = true;
+        document.getElementById('infamy2').innerText = activeComputerCard.infamy;
+        document.getElementById('infamy2').parentElement.hidden = true;
+        document.getElementById('persistence2').innerText = activeComputerCard.persistence;
+        document.getElementById('persistence2').parentElement.hidden = true;
         
     }
 
@@ -424,11 +427,11 @@ function setFearFactorField() {
     fieldP = fieldP1.innerHTML;
     fieldC = fieldC1.innerHTML;
     document.getElementById('name2').hidden = false;
-    document.getElementById('computercard').children[3].style.visibility = "visible";
-    document.getElementById('fearfactor2').hidden = false;
-    document.getElementById('killingpower2').hidden = false;
-    document.getElementById('infamy2').hidden = false;
-    document.getElementById('persistence2').hidden = false;
+    document.getElementById('computercard').children[2].style.visibility = "visible";
+    document.getElementById('fearfactor2').parentElement.hidden = false;
+    document.getElementById('killingpower2').parentElement.hidden = false;
+    document.getElementById('infamy2').parentElement.hidden = false;
+    document.getElementById('persistence2').parentElement.hidden = false;
     battle();
 };
 
@@ -436,11 +439,11 @@ function setKillingPowerField() {
     fieldP = fieldP2.innerHTML;
     fieldC = fieldC2.innerHTML;
     document.getElementById('name2').hidden = false;
-    document.getElementById('computercard').children[3].style.visibility = "visible";
-    document.getElementById('fearfactor2').hidden = false;
-    document.getElementById('killingpower2').hidden = false;
-    document.getElementById('infamy2').hidden = false;
-    document.getElementById('persistence2').hidden = false;
+    document.getElementById('computercard').children[2].style.visibility = "visible";
+    document.getElementById('fearfactor2').parentElement.hidden = false;
+    document.getElementById('killingpower2').parentElement.hidden = false;
+    document.getElementById('infamy2').parentElement.hidden = false;
+    document.getElementById('persistence2').parentElement.hidden = false;
     battle();
 };
 
@@ -448,11 +451,11 @@ function setInfamyField() {
     fieldP = fieldP3.innerHTML;
     fieldC = fieldC3.innerHTML;
     document.getElementById('name2').hidden = false;
-    document.getElementById('computercard').children[3].style.visibility = "visible";
-    document.getElementById('fearfactor2').hidden = false;
-    document.getElementById('killingpower2').hidden = false;
-    document.getElementById('infamy2').hidden = false;
-    document.getElementById('persistence2').hidden = false;
+    document.getElementById('computercard').children[2].style.visibility = "visible";
+    document.getElementById('fearfactor2').parentElement.hidden = false;
+    document.getElementById('killingpower2').parentElement.hidden = false;
+    document.getElementById('infamy2').parentElement.hidden = false;
+    document.getElementById('persistence2').parentElement.hidden = false;
     battle();
 };
 
@@ -460,11 +463,11 @@ function setPersistenceField() {
     fieldP = fieldP4.innerHTML;
     fieldC = fieldC4.innerHTML;
     document.getElementById('name2').hidden = false;
-    document.getElementById('computercard').children[3].style.visibility = "visible";
-    document.getElementById('fearfactor2').hidden = false;
-    document.getElementById('killingpower2').hidden = false;
-    document.getElementById('infamy2').hidden = false;
-    document.getElementById('persistence2').hidden = false;
+    document.getElementById('computercard').children[2].style.visibility = "visible";
+    document.getElementById('fearfactor2').parentElement.hidden = false;
+    document.getElementById('killingpower2').parentElement.hidden = false;
+    document.getElementById('infamy2').parentElement.hidden = false;
+    document.getElementById('persistence2').parentElement.hidden = false;
     battle();
 };
 
@@ -476,6 +479,14 @@ function battle() {
     
     if (playerDeck.length === 0) {
         console.log('game over');
+        document.getElementById('fearfactor2').parentElement.hidden = true;
+        document.getElementById('killingpower2').parentElement.hidden = true;
+        document.getElementById('infamy2').parentElement.hidden = true;
+        document.getElementById('persistence2').parentElement.hidden = true;
+        document.getElementById('fearfactor1').parentElement.hidden = true;
+        document.getElementById('killingpower1').parentElement.hidden = true;
+        document.getElementById('infamy1').parentElement.hidden = true;
+        document.getElementById('persistence1').parentElement.hidden = true;
     } else {
         if (fieldP > fieldC) {
         console.log('win')
@@ -524,13 +535,13 @@ function addListeners () {
 addListeners();
 
 //next game button reloads the page
-function nextGame(event) {
-    if (playerDeck.length === 0) {
-        location.reload();
-    } else {
-        alert('finish this game first!')
-    }
-}
+// function nextGame(event) {
+//     if (playerDeck.length === 0) {
+//         location.reload();
+//     } else {
+//         alert('finish this game first!')
+//     }
+// }
 
 // let myButton = document.getElementById('next-game');
 // myButton.addEventListener('click', nextGame);
