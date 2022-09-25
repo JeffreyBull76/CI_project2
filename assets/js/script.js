@@ -303,7 +303,7 @@ const card = [{
     persistence: 76,
 },
 {
-    name: 'Zombie Flesh Eaters',
+    name: 'Zombies',
     image: "assets/images/zombie-flesh-eaters-cardpic.png",
     ffactor: 81,
     kpower: 77,
@@ -346,14 +346,14 @@ function playCards () {
     if (playerDeck.length === 0) {
 
         document.getElementById('name1').innerText = null;
-        document.getElementById('playercard').children[2].outerHTML = null;
+        document.getElementById('playercard').children[0].outerHTML = null;
         document.getElementById('fearfactor1').innerText = null;
         document.getElementById('killingpower1').innerText = null;
         document.getElementById('infamy1').innerText = null;
         document.getElementById('persistence1').innerText = null;
 
         document.getElementById('name2').innerText = null;
-        document.getElementById('computercard').children[2].outerHTML = null;
+        document.getElementById('computercard').children[0].outerHTML = null;
         document.getElementById('fearfactor2').innerText = null;
         document.getElementById('killingpower2').innerText = null;
         document.getElementById('infamy2').innerText = null;
@@ -361,9 +361,9 @@ function playCards () {
     } else {
 
         document.getElementById('name1').innerText = activePlayerCard.name;
-        document.getElementById('playercard').children[2].outerHTML = `<picture> 
-        <source media="(max-width: 799px)" srcset=${activePlayerCard.image} width="180" height="180">
-        <img src=${activePlayerCard.image} alt="working resize test" width="280" height="280">
+        document.getElementById('playercard').children[0].outerHTML = `<picture> 
+        <source media="(max-width: 799px)" srcset=${activePlayerCard.image} width="150" height="150">
+        <img src=${activePlayerCard.image} alt="working resize test" width="230" height="230">
         </picture>`;
         document.getElementById('fearfactor1').innerText = activePlayerCard.ffactor;
         document.getElementById('killingpower1').innerText = activePlayerCard.kpower;
@@ -372,11 +372,11 @@ function playCards () {
     
         document.getElementById('name2').innerText = activeComputerCard.name;
         document.getElementById('name2').hidden = true;
-        document.getElementById('computercard').children[2].outerHTML = `<picture> 
-        <source media="(max-width: 799px)" srcset=${activeComputerCard.image} width="180" height="180">
-        <img src=${activeComputerCard.image} alt="working resize test" width="280" height="280">
+        document.getElementById('computercard').children[0].outerHTML = `<picture> 
+        <source media="(max-width: 799px)" srcset=${activeComputerCard.image} width="150" height="150">
+        <img src=${activeComputerCard.image} alt="working resize test" width="230" height="230">
         </picture>`;
-        document.getElementById('computercard').children[2].style.visibility = "hidden";
+        document.getElementById('computercard').children[0].style.visibility = "hidden";
         document.getElementById('fearfactor2').innerText = activeComputerCard.ffactor;
         document.getElementById('fearfactor2').parentElement.hidden = true;
         document.getElementById('killingpower2').innerText = activeComputerCard.kpower;
@@ -411,7 +411,7 @@ function setFearFactorField() {
     fieldP = fieldP1.innerHTML;
     fieldC = fieldC1.innerHTML;
     document.getElementById('name2').hidden = false;
-    document.getElementById('computercard').children[2].style.visibility = "visible";
+    document.getElementById('computercard').children[0].style.visibility = "visible";
     document.getElementById('fearfactor2').parentElement.hidden = false;
     document.getElementById('killingpower2').parentElement.hidden = false;
     document.getElementById('infamy2').parentElement.hidden = false;
@@ -423,7 +423,7 @@ function setKillingPowerField() {
     fieldP = fieldP2.innerHTML;
     fieldC = fieldC2.innerHTML;
     document.getElementById('name2').hidden = false;
-    document.getElementById('computercard').children[2].style.visibility = "visible";
+    document.getElementById('computercard').children[0].style.visibility = "visible";
     document.getElementById('fearfactor2').parentElement.hidden = false;
     document.getElementById('killingpower2').parentElement.hidden = false;
     document.getElementById('infamy2').parentElement.hidden = false;
@@ -435,7 +435,7 @@ function setInfamyField() {
     fieldP = fieldP3.innerHTML;
     fieldC = fieldC3.innerHTML;
     document.getElementById('name2').hidden = false;
-    document.getElementById('computercard').children[2].style.visibility = "visible";
+    document.getElementById('computercard').children[0].style.visibility = "visible";
     document.getElementById('fearfactor2').parentElement.hidden = false;
     document.getElementById('killingpower2').parentElement.hidden = false;
     document.getElementById('infamy2').parentElement.hidden = false;
@@ -447,7 +447,7 @@ function setPersistenceField() {
     fieldP = fieldP4.innerHTML;
     fieldC = fieldC4.innerHTML;
     document.getElementById('name2').hidden = false;
-    document.getElementById('computercard').children[2].style.visibility = "visible";
+    document.getElementById('computercard').children[0].style.visibility = "visible";
     document.getElementById('fearfactor2').parentElement.hidden = false;
     document.getElementById('killingpower2').parentElement.hidden = false;
     document.getElementById('infamy2').parentElement.hidden = false;
@@ -460,6 +460,7 @@ function battle() {
     fieldP2.removeEventListener('click', setKillingPowerField);
     fieldP3.removeEventListener('click', setInfamyField);
     fieldP4.removeEventListener('click', setPersistenceField);
+    document.getElementById('computercard').style.backgroundImage = "url('assets/images/tt-card-front.png')";
     
     if (playerDeck.length === 0) {
         console.log('game over');
@@ -518,6 +519,7 @@ function addListeners () {
     fieldP3.addEventListener('click', setInfamyField);
     fieldP4.addEventListener('click', setPersistenceField);
     playCards();
+    document.getElementById('computercard').style.backgroundImage = "url('assets/images/tt-card-back.png')";
 }
 
 addListeners();

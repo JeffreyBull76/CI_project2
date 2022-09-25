@@ -1,5 +1,8 @@
 # **HORROR TOP TRUMPS**
 
+add this to tech used (text shadow generator)
+http://owumaro.github.io/text-stroke-generator/
+
 ![]()
 
 -----------------------------------------
