@@ -350,14 +350,12 @@ shuffle(card);
 let playerDeck = card.slice(0, 20);
 let computerDeck = card.slice(19, 40);
 
-function playCards (event) {
+function playCards () {
     let activePlayerCard = playerDeck[0];
     let activeComputerCard = computerDeck[0];
 
     console.log(playerDeck);
     console.log(computerDeck);
-
-    document.getElementById('myPopup').innerText = '';
 
     if (playerDeck.length === 0) {
 
@@ -494,8 +492,8 @@ function battle() {
         playerWins.push(computerDeck[0]);
         playerDeck.shift();
         computerDeck.shift();
-        document.getElementById('myPopup').innerText = 'Winner... next card';
-        setTimeout(playCards, 1500);
+        document.getElementById('messagearea').style.visibility = "visible";
+        document.getElementById('popuptext').innerText = 'Winner... next card';
 
         document.getElementById('playerscore').children[1].textContent = playerWins.length;
     } else if (fieldP < fieldC) {
@@ -504,8 +502,8 @@ function battle() {
         computerWins.push(computerDeck[0]);
         playerDeck.shift();
         computerDeck.shift();   
-        document.getElementById('myPopup').innerText = 'Loser... next card';
-        setTimeout(playCards, 1500);
+        document.getElementById('messagearea').style.visibility = "visible";
+        document.getElementById('popuptext').innerText = 'Loser... next card';
 
         document.getElementById('computerscore').children[1].textContent = computerWins.length;    
     } else if (fieldP == fieldC) {
@@ -513,23 +511,27 @@ function battle() {
         computerWins.push(computerDeck[0]);
         playerDeck.shift();
         computerDeck.shift(); 
-        document.getElementById('myPopup').innerText = 'Draw... next card';
-        setTimeout(playCards, 1500);
+        document.getElementById('messagearea').style.visibility = "visible";
+        document.getElementById('popuptext').innerText = 'Draw... next card';
 
         document.getElementById('playerscore').children[1].textContent = playerWins.length;
         document.getElementById('computerscore').children[1].textContent = computerWins.length;
     }
     
-    setTimeout(addListeners, 1500);
+    let nextCard = document.getElementById('popuptext');
+    nextCard.addEventListener('click', addListeners);
+
 }};
 
 
 //battle function listener
 function addListeners () {
+    document.getElementById('messagearea').style.visibility = "hidden";
     fieldP1.addEventListener('click', setFearFactorField);
     fieldP2.addEventListener('click', setKillingPowerField);
     fieldP3.addEventListener('click', setInfamyField);
     fieldP4.addEventListener('click', setPersistenceField);
+    playCards();
 }
 
 addListeners();
