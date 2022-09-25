@@ -312,20 +312,6 @@ const card = [{
 },
 ];
 
-// When the user clicks on div, open the popup
-// code taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup
-
-function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-}
-
-myFunction();
-
-// <div class="popup" onclick="myFunction()">Click me to toggle the popup!
-// <span class="popuptext" id="myPopup">A Simple Popup!</span>
-// </div>
-
 const playerWins = [];
 const computerWins = [];
 

@@ -32,7 +32,7 @@ h2 {
 }
 
 body {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Alice', serif;
 }
 
 /* landing page div styles */
@@ -111,18 +111,22 @@ body {
 
 .activecard {
     display: relative;
-    width: 240px;
+    width: 215px;
     margin: 10px auto;
-    height: 320px;
+    height: 345px;
 }
 
 #playercard {
-    background-color: aqua;
+    background-image: url('../images/tt-card-front.png');
+    background-repeat: no-repeat;
+    background-size: 215px 345px;
     text-align: center;
 }
 
 #computercard {
-    background-color: blue;
+    background-image: url('../images/tt-card-back.png');
+    background-repeat: no-repeat;
+    background-size: 215px 345px;
     text-align: center;
 }
 
@@ -230,16 +234,18 @@ th, td {
     
     .activecard {
         display: inline-block;
-        width: 340px;
+        width: 324px;
         margin: 10px auto;
-        height: 500px;
+        height: 520px;
     }
     
     #playercard {
+        background-size: 324px 520px;
         float: left;
     }
     
     #computercard {
+        background-size: 324px 520px;
         float: right;
     }
     
