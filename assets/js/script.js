@@ -96,7 +96,7 @@ const card = [{
 },
 {
     name: 'Evil Dead',
-    image: "assets/images/Evil-dead-cardpic.png",
+    image: "assets/images/evil-dead-cardpic.png",
     ffactor: 89,
     kpower: 87,
     infamy: 83,
@@ -128,7 +128,7 @@ const card = [{
 },
 {
     name: 'Jack Torance',
-    image: "assets/images/Jack-Torance-cardpic.png",
+    image: "assets/images/jack-torrance-cardpic.png",
     ffactor: 82,
     kpower: 79,
     infamy: 89,
@@ -136,7 +136,7 @@ const card = [{
 },
 {
     name: 'Jason Vorhees',
-    image: "assets/images/Jason-Vorhees-cardpic.png",
+    image: "assets/images/jason-vorhees-cardpic.png",
     ffactor: 87,
     kpower: 96,
     infamy: 87,
@@ -160,7 +160,7 @@ const card = [{
 },
 {
     name: 'Leprechaun',
-    image: "assets/images/Leprechaun-cardpic.png",
+    image: "assets/images/leprechaun-cardpic.png",
     ffactor: 82,
     kpower: 78,
     infamy: 79,
@@ -192,7 +192,7 @@ const card = [{
 },
 {
     name: 'Pennywise',
-    image: "assets/images/Pennywise-cardpic.png",
+    image: "assets/images/pennywise-cardpic.png",
     ffactor: 96,
     kpower: 79,
     infamy: 89,
@@ -296,7 +296,7 @@ const card = [{
 },
 {
     name: 'Wolfman',
-    image: "assets/images/Wolfman-cardpic.png",
+    image: "assets/images/wolfman-cardpic.png",
     ffactor: 82,
     kpower: 77,
     infamy: 95,
@@ -315,19 +315,19 @@ const card = [{
 // When the user clicks on div, open the popup
 // code taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup
 
-function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-}
+// function myFunction() {
+//     var popup = document.getElementById("myPopup");
+//     popup.classList.toggle("show");
+// }
 
-myFunction();
+// myFunction();
 
 // <div class="popup" onclick="myFunction()">Click me to toggle the popup!
 // <span class="popuptext" id="myPopup">A Simple Popup!</span>
 // </div>
 
 const playerWins = [];
-const computerWins =[];
+const computerWins = [];
 
 /**
  * Below is some rudimentary code to create two arrays based on a randomised shuffle or the main arrary 
@@ -354,19 +354,19 @@ function playCards (event) {
     let activePlayerCard = playerDeck[0];
     let activeComputerCard = computerDeck[0];
 
-    document.getElementById('mypopup').innerText = '';
+    document.getElementById('myPopup').innerText = '';
 
     if (playerDeck.length === 0) {
 
         document.getElementById('name1').innerText = null;
-        document.getElementById('playercard').children[3].outerHTML = null;
+        document.getElementById('playercard').children[2].outerHTML = null;
         document.getElementById('fearfactor1').innerText = null;
         document.getElementById('killingpower1').innerText = null;
         document.getElementById('infamy1').innerText = null;
         document.getElementById('persistence1').innerText = null;
 
         document.getElementById('name2').innerText = null;
-        document.getElementById('computercard').children[3].outerHTML = null;
+        document.getElementById('computercard').children[2].outerHTML = null;
         document.getElementById('fearfactor2').innerText = null;
         document.getElementById('killingpower2').innerText = null;
         document.getElementById('infamy2').innerText = null;
@@ -378,10 +378,10 @@ function playCards (event) {
         <source media="(max-width: 799px)" srcset=${activePlayerCard.image} width="50" height="50">
         <img src=${activePlayerCard.image} alt="working resize test" width="100" height="100">
         </picture>`;
-        document.getElementById('fearfactor1').innerText = activePlayerCard.kpower;
-        document.getElementById('killingpower1').innerText = activePlayerCard.ffactor;
-        document.getElementById('infamy1').innerText = activePlayerCard.hrating;
-        document.getElementById('persistence1').innerText = activePlayerCard.pstrength;
+        document.getElementById('fearfactor1').innerText = activePlayerCard.ffactor;
+        document.getElementById('killingpower1').innerText = activePlayerCard.kpower;
+        document.getElementById('infamy1').innerText = activePlayerCard.infamy;
+        document.getElementById('persistence1').innerText = activePlayerCard.persistence;
     
         document.getElementById('name2').innerText = activeComputerCard.name;
         document.getElementById('name2').hidden = true;
@@ -419,3 +419,118 @@ let fieldC3 = document.getElementById('infamy2');
 
 let fieldP4 = document.getElementById('persistence1');
 let fieldC4 = document.getElementById('persistence2');
+
+function setFearFactorField() {
+    fieldP = fieldP1.innerHTML;
+    fieldC = fieldC1.innerHTML;
+    document.getElementById('name2').hidden = false;
+    document.getElementById('computercard').children[3].style.visibility = "visible";
+    document.getElementById('fearfactor2').hidden = false;
+    document.getElementById('killingpower2').hidden = false;
+    document.getElementById('infamy2').hidden = false;
+    document.getElementById('persistence2').hidden = false;
+    battle();
+};
+
+function setKillingPowerField() {
+    fieldP = fieldP2.innerHTML;
+    fieldC = fieldC2.innerHTML;
+    document.getElementById('name2').hidden = false;
+    document.getElementById('computercard').children[3].style.visibility = "visible";
+    document.getElementById('fearfactor2').hidden = false;
+    document.getElementById('killingpower2').hidden = false;
+    document.getElementById('infamy2').hidden = false;
+    document.getElementById('persistence2').hidden = false;
+    battle();
+};
+
+function setInfamyField() {
+    fieldP = fieldP3.innerHTML;
+    fieldC = fieldC3.innerHTML;
+    document.getElementById('name2').hidden = false;
+    document.getElementById('computercard').children[3].style.visibility = "visible";
+    document.getElementById('fearfactor2').hidden = false;
+    document.getElementById('killingpower2').hidden = false;
+    document.getElementById('infamy2').hidden = false;
+    document.getElementById('persistence2').hidden = false;
+    battle();
+};
+
+function setPersistenceField() {
+    fieldP = fieldP4.innerHTML;
+    fieldC = fieldC4.innerHTML;
+    document.getElementById('name2').hidden = false;
+    document.getElementById('computercard').children[3].style.visibility = "visible";
+    document.getElementById('fearfactor2').hidden = false;
+    document.getElementById('killingpower2').hidden = false;
+    document.getElementById('infamy2').hidden = false;
+    document.getElementById('persistence2').hidden = false;
+    battle();
+};
+
+function battle() {
+    fieldP1.removeEventListener('click', setFearFactorField);
+    fieldP2.removeEventListener('click', setKillingPowerField);
+    fieldP3.removeEventListener('click', setInfamyField);
+    fieldP4.removeEventListener('click', setPersistenceField);
+    
+    if (playerDeck.length === 0) {
+        console.log('game over');
+    } else {
+        if (fieldP > fieldC) {
+        console.log('win')
+        playerWins.push(playerDeck[0]);
+        playerWins.push(computerDeck[0]);
+        playerDeck.shift();
+        computerDeck.shift();
+        document.getElementById('myPopup').innerText = 'Winner... next card';
+        setTimeout(playCards, 1500);
+
+        document.getElementById('playerscore').children[1].textContent = playerWins.length;
+    } else if (fieldP < fieldC) {
+        console.log('lose')
+        computerWins.push(playerDeck[0]);
+        computerWins.push(computerDeck[0]);
+        playerDeck.shift();
+        computerDeck.shift();   
+        document.getElementById('myPopup').innerText = 'Loser... next card';
+        setTimeout(playCards, 1500);
+
+        document.getElementById('computerscore').children[1].textContent = computerWins.length;    
+    } else if (fieldP == fieldC) {
+        playerWins.push(playerDeck[0]);
+        computerWins.push(computerDeck[0]);
+        playerDeck.shift();
+        computerDeck.shift(); 
+        document.getElementById('myPopup').innerText = 'Draw... next card';
+        setTimeout(playCards, 1500);
+
+        document.getElementById('playerscore').children[1].textContent = playerWins.length;
+        document.getElementById('computerscore').children[1].textContent = computerWins.length;
+    }
+    
+    setTimeout(addListeners, 1500);
+}};
+
+
+//battle function listener
+function addListeners () {
+    fieldP1.addEventListener('click', setFearFactorField);
+    fieldP2.addEventListener('click', setKillingPowerField);
+    fieldP3.addEventListener('click', setInfamyField);
+    fieldP4.addEventListener('click', setPersistenceField);
+}
+
+addListeners();
+
+//next game button reloads the page
+function nextGame(event) {
+    if (playerDeck.length === 0) {
+        location.reload();
+    } else {
+        alert('finish this game first!')
+    }
+}
+
+// let myButton = document.getElementById('next-game');
+// myButton.addEventListener('click', nextGame);
