@@ -325,3 +325,97 @@ myFunction();
 // <div class="popup" onclick="myFunction()">Click me to toggle the popup!
 // <span class="popuptext" id="myPopup">A Simple Popup!</span>
 // </div>
+
+const playerWins = [];
+const computerWins =[];
+
+/**
+ * Below is some rudimentary code to create two arrays based on a randomised shuffle or the main arrary 
+ * link to splice method
+ * https://thewebdev.info/2022/06/26/how-to-split-array-into-two-arrays-with-javascript/#:~:text=To%20split%20array%20into%20two%20arrays%20with%20JavaScript%2C%20we%20can,indexToSplit)%3B%20const%20second%20%3D%20arr.
+ * links to randomiser
+ * https://javascript.info/task/shuffle (shuffle array)
+ */
+
+ function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+  
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+};
+
+shuffle(card);  
+
+let playerDeck = card.slice(0, 20);
+let computerDeck = card.slice(20, 40);
+
+function playCards (event) {
+    let activePlayerCard = playerDeck[0];
+    let activeComputerCard = computerDeck[0];
+
+    document.getElementById('mypopup').innerText = '';
+
+    if (playerDeck.length === 0) {
+
+        document.getElementById('name1').innerText = null;
+        document.getElementById('playercard').children[3].outerHTML = null;
+        document.getElementById('fearfactor1').innerText = null;
+        document.getElementById('killingpower1').innerText = null;
+        document.getElementById('infamy1').innerText = null;
+        document.getElementById('persistence1').innerText = null;
+
+        document.getElementById('name2').innerText = null;
+        document.getElementById('computercard').children[3].outerHTML = null;
+        document.getElementById('fearfactor2').innerText = null;
+        document.getElementById('killingpower2').innerText = null;
+        document.getElementById('infamy2').innerText = null;
+        document.getElementById('persistence2').innerText = null;
+    } else {
+
+        document.getElementById('name1').innerText = activePlayerCard.name;
+        document.getElementById('playercard').children[2].outerHTML = `<picture> 
+        <source media="(max-width: 799px)" srcset=${activePlayerCard.image} width="50" height="50">
+        <img src=${activePlayerCard.image} alt="working resize test" width="100" height="100">
+        </picture>`;
+        document.getElementById('fearfactor1').innerText = activePlayerCard.kpower;
+        document.getElementById('killingpower1').innerText = activePlayerCard.ffactor;
+        document.getElementById('infamy1').innerText = activePlayerCard.hrating;
+        document.getElementById('persistence1').innerText = activePlayerCard.pstrength;
+    
+        document.getElementById('name2').innerText = activeComputerCard.name;
+        document.getElementById('name2').hidden = true;
+        document.getElementById('computercard').children[2].outerHTML = `<picture> 
+        <source media="(max-width: 799px)" srcset=${activeComputerCard.image} width="50" height="50">
+        <img src=${activeComputerCard.image} alt="working resize test" width="100" height="100">
+        </picture>`;
+        document.getElementById('computercard').children[2].style.visibility = "hidden";
+        document.getElementById('fearfactor2').innerText = activeComputerCard.kpower;
+        document.getElementById('fearfactor2').hidden = true;
+        document.getElementById('killingpower2').innerText = activeComputerCard.ffactor;
+        document.getElementById('killingpower2').hidden = true;
+        document.getElementById('infamy2').innerText = activeComputerCard.hrating;
+        document.getElementById('infamy2').hidden = true;
+        document.getElementById('persistence2').innerText = activeComputerCard.pstrength;
+        document.getElementById('persistence2').hidden = true;
+        
+    }
+
+};
+
+playCards();
+
+let fieldP; 
+let fieldC;
+
+let fieldP1 = document.getElementById('fearfactor1');
+let fieldC1 = document.getElementById('fearfactor2');
+
+let fieldP2 = document.getElementById('killingpower1');
+let fieldC2 = document.getElementById('killingpower2');
+
+let fieldP3 = document.getElementById('infamy1');
+let fieldC3 = document.getElementById('infamy2');
+
+let fieldP4 = document.getElementById('persistence1');
+let fieldC4 = document.getElementById('persistence2');
