@@ -32,70 +32,79 @@ html {
 
 body {
     width: 100vw;
-    height: 100vh;
+    height: 932px;
     max-width: 1200px;
     margin: 0 auto;
     font-family: 'Alice', serif;
     font-weight: bolder;
     background-image: url('../images/tt-page-backgnd.png');
     background-repeat: no-repeat;
-    background-position: top;
-    
+    background-position: top;   
 }
+
+#gamebackgnd {
+    background-image: url('../images/tt-page-backgnd1.png');
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
 
 h1 {
     font-family: 'newrockerregular', serif;
     font-size: 2.3rem;
     letter-spacing: 4px;
-    text-shadow: rgb(212, 193, 166) 3px 0px 0px, rgb(212, 193, 166) 2.83487px 0.981584px 0px, rgb(212, 193, 166) 2.35766px 1.85511px 0px, rgb(212, 193, 166) 1.62091px 2.52441px 0px, rgb(212, 193, 166) 0.705713px 2.91581px 0px, rgb(212, 193, 166) -0.287171px 2.98622px 0px, rgb(212, 193, 166) -1.24844px 2.72789px 0px, rgb(212, 193, 166) -2.07227px 2.16926px 0px, rgb(212, 193, 166) -2.66798px 1.37182px 0px, rgb(212, 193, 166) -2.96998px 0.42336px 0px, rgb(212, 193, 166) -2.94502px -0.571704px 0px, rgb(212, 193, 166) -2.59586px -1.50383px 0px, rgb(212, 193, 166) -1.96093px -2.27041px 0px, rgb(212, 193, 166) -1.11013px -2.78704px 0px, rgb(212, 193, 166) -0.137119px -2.99686px 0px, rgb(212, 193, 166) 0.850987px -2.87677px 0px, rgb(212, 193, 166) 1.74541px -2.43999px 0px, rgb(212, 193, 166) 2.44769px -1.73459px 0px, rgb(212, 193, 166) 2.88051px -0.838247px 0px;
+    text-shadow: rgb(194, 173, 142) 3px 0px 0px, rgb(194, 173, 142) 2.83487px 0.981584px 0px, rgb(194, 173, 142) 2.35766px 1.85511px 0px, rgb(194, 173, 142) 1.62091px 2.52441px 0px, rgb(194, 173, 142) 0.705713px 2.91581px 0px, rgb(194, 173, 142) -0.287171px 2.98622px 0px, rgb(194, 173, 142) -1.24844px 2.72789px 0px, rgb(194, 173, 142) -2.07227px 2.16926px 0px, rgb(194, 173, 142) -2.66798px 1.37182px 0px, rgb(194, 173, 142) -2.96998px 0.42336px 0px, rgb(194, 173, 142) -2.94502px -0.571704px 0px, rgb(194, 173, 142) -2.59586px -1.50383px 0px, rgb(194, 173, 142) -1.96093px -2.27041px 0px, rgb(194, 173, 142) -1.11013px -2.78704px 0px, rgb(194, 173, 142) -0.137119px -2.99686px 0px, rgb(194, 173, 142) 0.850987px -2.87677px 0px, rgb(194, 173, 142) 1.74541px -2.43999px 0px, rgb(194, 173, 142) 2.44769px -1.73459px 0px, rgb(194, 173, 142) 2.88051px -0.838247px 0px;
 }
 
 h2 {
     font-family: 'newrockerregular', serif;
     color: rgba(141, 0, 0, 1);
     letter-spacing: 2px;
-    text-shadow: rgb(212, 193, 166) 3px 0px 0px, rgb(212, 193, 166) 2.83487px 0.981584px 0px, rgb(212, 193, 166) 2.35766px 1.85511px 0px, rgb(212, 193, 166) 1.62091px 2.52441px 0px, rgb(212, 193, 166) 0.705713px 2.91581px 0px, rgb(212, 193, 166) -0.287171px 2.98622px 0px, rgb(212, 193, 166) -1.24844px 2.72789px 0px, rgb(212, 193, 166) -2.07227px 2.16926px 0px, rgb(212, 193, 166) -2.66798px 1.37182px 0px, rgb(212, 193, 166) -2.96998px 0.42336px 0px, rgb(212, 193, 166) -2.94502px -0.571704px 0px, rgb(212, 193, 166) -2.59586px -1.50383px 0px, rgb(212, 193, 166) -1.96093px -2.27041px 0px, rgb(212, 193, 166) -1.11013px -2.78704px 0px, rgb(212, 193, 166) -0.137119px -2.99686px 0px, rgb(212, 193, 166) 0.850987px -2.87677px 0px, rgb(212, 193, 166) 1.74541px -2.43999px 0px, rgb(212, 193, 166) 2.44769px -1.73459px 0px, rgb(212, 193, 166) 2.88051px -0.838247px 0px;
+    text-shadow: rgb(194, 173, 142) 3px 0px 0px, rgb(194, 173, 142) 2.83487px 0.981584px 0px, rgb(194, 173, 142) 2.35766px 1.85511px 0px, rgb(194, 173, 142) 1.62091px 2.52441px 0px, rgb(194, 173, 142) 0.705713px 2.91581px 0px, rgb(194, 173, 142) -0.287171px 2.98622px 0px, rgb(194, 173, 142) -1.24844px 2.72789px 0px, rgb(194, 173, 142) -2.07227px 2.16926px 0px, rgb(194, 173, 142) -2.66798px 1.37182px 0px, rgb(194, 173, 142) -2.96998px 0.42336px 0px, rgb(194, 173, 142) -2.94502px -0.571704px 0px, rgb(194, 173, 142) -2.59586px -1.50383px 0px, rgb(194, 173, 142) -1.96093px -2.27041px 0px, rgb(194, 173, 142) -1.11013px -2.78704px 0px, rgb(194, 173, 142) -0.137119px -2.99686px 0px, rgb(194, 173, 142) 0.850987px -2.87677px 0px, rgb(194, 173, 142) 1.74541px -2.43999px 0px, rgb(194, 173, 142) 2.44769px -1.73459px 0px, rgb(194, 173, 142) 2.88051px -0.838247px 0px;
 }
 
 /* landing page div styles */
 
 #heading {
-    position: relative;
     margin: auto;
     width: 320px;
-    height: 16vh;
-    top: 1%;
+    height: 100px;
 }
 
 #heading h1 {
-    text-align: center;
     position: relative;
-    top: 11px;
+    text-align: center;
+    top: 1.8rem;
 }
 
 #main {
     margin: auto;
     width: 320px;
-    height: 70vh;
+    height: 800px;
 }
 
 #main p, #main h2 {
     text-align: center;
     position: relative;
-    top: 30px;
+    top: 12%;
 }
 
 #footer {
+    position: relative;
+    bottom: 2%;
     margin: auto;
     width: 320px;
-    height: 14vh;
+    height: 32px;
 }
 
 #footer p {
+    font-family: 'newrockerregular';
+    color: rgb(158, 157, 139);
+    font-weight: bolder;
     text-align: center;
     position: relative;
-    font-size: 0.8rem;
-    top: 60%;
+    text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px, rgb(0, 0, 0) -0.416147px 0.909297px 0px, rgb(0, 0, 0) -0.989992px 0.14112px 0px, rgb(0, 0, 0) -0.653644px -0.756802px 0px, rgb(0, 0, 0) 0.283662px -0.958924px 0px, rgb(0, 0, 0) 0.96017px -0.279415px 0px;
+    font-size: 1.2rem;
 }
 
 /* game page styles */
@@ -110,80 +119,92 @@ h2 {
     float: left;
     width: 160px;
     height: 6vh;
-    text-align: center;
+    text-align: left;
+    position: relative;
+    left: 2%;
 }
 
 #playerscore p, #computerscore p {
     font-family: 'newrockerregular';
-    text-shadow: rgb(192, 90, 90) 3px 0px 0px, rgb(192, 90, 90) 2.83487px 0.981584px 0px, rgb(192, 90, 90) 2.35766px 1.85511px 0px, rgb(192, 90, 90) 1.62091px 2.52441px 0px, rgb(192, 90, 90) 0.705713px 2.91581px 0px, rgb(192, 90, 90) -0.287171px 2.98622px 0px, rgb(192, 90, 90) -1.24844px 2.72789px 0px, rgb(192, 90, 90) -2.07227px 2.16926px 0px, rgb(192, 90, 90) -2.66798px 1.37182px 0px, rgb(192, 90, 90) -2.96998px 0.42336px 0px, rgb(192, 90, 90) -2.94502px -0.571704px 0px, rgb(192, 90, 90) -2.59586px -1.50383px 0px, rgb(192, 90, 90) -1.96093px -2.27041px 0px, rgb(192, 90, 90) -1.11013px -2.78704px 0px, rgb(192, 90, 90) -0.137119px -2.99686px 0px, rgb(192, 90, 90) 0.850987px -2.87677px 0px, rgb(192, 90, 90) 1.74541px -2.43999px 0px, rgb(192, 90, 90) 2.44769px -1.73459px 0px, rgb(192, 90, 90) 2.88051px -0.838247px 0px;
+    font-size: large;
+    text-shadow: rgb(194, 173, 142) 3px 0px 0px, rgb(194, 173, 142) 2.83487px 0.981584px 0px, rgb(194, 173, 142) 2.35766px 1.85511px 0px, rgb(194, 173, 142) 1.62091px 2.52441px 0px, rgb(194, 173, 142) 0.705713px 2.91581px 0px, rgb(194, 173, 142) -0.287171px 2.98622px 0px, rgb(194, 173, 142) -1.24844px 2.72789px 0px, rgb(194, 173, 142) -2.07227px 2.16926px 0px, rgb(194, 173, 142) -2.66798px 1.37182px 0px, rgb(194, 173, 142) -2.96998px 0.42336px 0px, rgb(194, 173, 142) -2.94502px -0.571704px 0px, rgb(194, 173, 142) -2.59586px -1.50383px 0px, rgb(194, 173, 142) -1.96093px -2.27041px 0px, rgb(194, 173, 142) -1.11013px -2.78704px 0px, rgb(194, 173, 142) -0.137119px -2.99686px 0px, rgb(194, 173, 142) 0.850987px -2.87677px 0px, rgb(194, 173, 142) 1.74541px -2.43999px 0px, rgb(194, 173, 142) 2.44769px -1.73459px 0px, rgb(194, 173, 142) 2.88051px -0.838247px 0px;
     position: relative;
-    top: 10%;
+    top: 2%;
 }
 
 #computerscore {
     float: right;
     width: 160px;
     height: 6vh;
-    text-align: center;
+    text-align: right;
+    position: relative;
+    right: 2%;
 }
 
 #cardarea {
+    position: relative;
+    top: -2%;
     margin: auto;
     width: 320px;
 }
 
 .activecard {
-    width: 215px;
-    margin: 10px auto;
-    height: 345px;
+    width: 235px;
+    margin: 3px auto;
+    height: 388px;
 }
 
 #playercard {
     background-image: url('../images/tt-card-front1.png');
     background-repeat: no-repeat;
-    background-size: 215px 345px;
+    background-size: 235px 388px;
     text-align: center;
+    position: relative;
 }
 
 picture {
     position: relative;
-    top: 10%;
+    top: 9%;
 }
 
 img {
     border-radius: 10px;
-    border: 3px solid #a300006e;
+    border: 3px solid #ffffff83;
 }
 
 #computercard {
     background-image: url('../images/tt-card-back1.png');
     background-repeat: no-repeat;
-    background-size: 215px 345px;
+    background-size: 235px 388px;
     text-align: center;
+    position: relative;
 }
 
 #name1, #name2 {
+    position: relative;
     font-family: 'newrockerregular', serif;
-    color: antiquewhite;
+    color: black;
     font-weight: lighter;
     font-size: 1.4rem;
-    text-shadow: rgb(163, 0, 0) 2px 0px 0px, rgb(163, 0, 0) 1.75517px 0.958851px 0px, rgb(163, 0, 0) 1.0806px 1.68294px 0px, rgb(163, 0, 0) 0.141474px 1.99499px 0px, rgb(163, 0, 0) -0.832294px 1.81859px 0px, rgb(163, 0, 0) -1.60229px 1.19694px 0px, rgb(163, 0, 0) -1.97998px 0.28224px 0px, rgb(163, 0, 0) -1.87291px -0.701566px 0px, rgb(163, 0, 0) -1.30729px -1.5136px 0px, rgb(163, 0, 0) -0.421592px -1.95506px 0px, rgb(163, 0, 0) 0.567324px -1.91785px 0px, rgb(163, 0, 0) 1.41734px -1.41108px 0px, rgb(163, 0, 0) 1.92034px -0.558831px 0px;    position: relative;
+    text-shadow: rgb(194, 173, 142) 3px 0px 0px, rgb(194, 173, 142) 2.83487px 0.981584px 0px, rgb(194, 173, 142) 2.35766px 1.85511px 0px, rgb(194, 173, 142) 1.62091px 2.52441px 0px, rgb(194, 173, 142) 0.705713px 2.91581px 0px, rgb(194, 173, 142) -0.287171px 2.98622px 0px, rgb(194, 173, 142) -1.24844px 2.72789px 0px, rgb(194, 173, 142) -2.07227px 2.16926px 0px, rgb(194, 173, 142) -2.66798px 1.37182px 0px, rgb(194, 173, 142) -2.96998px 0.42336px 0px, rgb(194, 173, 142) -2.94502px -0.571704px 0px, rgb(194, 173, 142) -2.59586px -1.50383px 0px, rgb(194, 173, 142) -1.96093px -2.27041px 0px, rgb(194, 173, 142) -1.11013px -2.78704px 0px, rgb(194, 173, 142) -0.137119px -2.99686px 0px, rgb(194, 173, 142) 0.850987px -2.87677px 0px, rgb(194, 173, 142) 1.74541px -2.43999px 0px, rgb(194, 173, 142) 2.44769px -1.73459px 0px, rgb(194, 173, 142) 2.88051px -0.838247px 0px;
     top: 10%;
 }
 
 table {
-    margin: 12% auto 0 auto;
+    margin: 7% auto 3% auto;
+    position: relative;
+    top: 5%;
 }
 
 th, td {
     border: 1px solid #dddddd00;
     text-align: left;
-    padding: 0 20px 0 0;
-    font-size: 0.8rem;
+    padding: 0 30px 2% 0;
+    font-size: 0.9rem;
 }
 
 .table-value {
-    padding: 0 0 0 20px;
+    padding: 0 0 2% 30px;
     cursor: pointer;
     font-weight: bolder;
 }
@@ -225,7 +246,7 @@ th, td {
     #heading {
         margin: auto;
         width: 768px;
-        height: 16vh;
+        height: 100px;
         position: relative;
         top: 3%;
     }
@@ -233,18 +254,17 @@ th, td {
     #main {
         margin: auto;
         width: 500px;
-        height: 70vh;
+        height: 800px;
     }
 
     #main p, #main h2 {
-        top: 1%;
+        top: 10%;
     }
     
 
     #footer {
-        margin: auto;
         width: 768px;
-        height: 14vh;
+        position: relative;
     }
 
     h1 {
@@ -267,6 +287,7 @@ th, td {
         font-size: 1.6rem;
         width: 180px;
         height: 12vh;
+        left: 6%;
     }
     
     #computerscore {
@@ -274,29 +295,31 @@ th, td {
         font-size: 1.6rem;
         width: 180px;
         height: 12vh;
+        right: 6%;
     }
     
     #cardarea {
-        position: relative;
-        top: 4rem;
+        top: 6rem;
         width: 700px;
     }
     
     .activecard {
         display: inline-block;
-        width: 324px;
-        margin: 10px auto;
-        height: 520px;
+        width: 300px;
+        margin: 4px auto;
+        height: 496px;
     }
     
     #playercard {
-        background-size: 324px 520px;
+        background-size: 300px 496px;
         float: left;
+        left: 3%;
     }
     
     #computercard {
-        background-size: 324px 520px;
+        background-size: 300px 496px;
         float: right;
+        right: 4%;
     }
     
     table {
@@ -324,6 +347,6 @@ th, td {
     }
 
     #myPopup {
-        top: 130px;
+        top: 10%;
     }
 }

@@ -364,7 +364,7 @@ function playCards () {
 
         document.getElementById('name1').innerText = activePlayerCard.name;
         document.getElementById('playercard').children[0].outerHTML = `<picture> 
-        <source media="(max-width: 799px)" srcset=${activePlayerCard.image} width="150" height="150">
+        <source media="(max-width: 767px)" srcset=${activePlayerCard.image} width="165" height="165">
         <img src=${activePlayerCard.image} alt="working resize test" width="230" height="230">
         </picture>`;
         document.getElementById('fearfactor1').innerText = activePlayerCard.ffactor;
@@ -375,7 +375,7 @@ function playCards () {
         document.getElementById('name2').innerText = activeComputerCard.name;
         document.getElementById('name2').hidden = true;
         document.getElementById('computercard').children[0].outerHTML = `<picture> 
-        <source media="(max-width: 799px)" srcset=${activeComputerCard.image} width="150" height="150">
+        <source media="(max-width: 767px)" srcset=${activeComputerCard.image} width="165" height="165">
         <img src=${activeComputerCard.image} alt="working resize test" width="230" height="230">
         </picture>`;
         document.getElementById('computercard').children[0].style.visibility = "hidden";
