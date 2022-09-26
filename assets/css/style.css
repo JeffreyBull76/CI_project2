@@ -12,10 +12,17 @@ a {
     color: inherit;
 }
 
+html {
+    background-color: black;
+}
+
 body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    background-image: url('../images/tt-page-back.png');
+    background-repeat: no-repeat;
+    font-family: 'Alice', serif;
 }
 
 h1 {
@@ -31,16 +38,14 @@ h2 {
     letter-spacing: 2px;
 }
 
-body {
-    font-family: 'Alice', serif;
-}
-
 /* landing page div styles */
 
 #heading {
+    position: relative;
     margin: auto;
     width: 320px;
     height: 16vh;
+    top: 15%;
 }
 
 #heading h1 {
@@ -202,6 +207,8 @@ th, td {
         margin: auto;
         width: 768px;
         height: 16vh;
+        position: relative;
+        top: 60px;
     }
 
     #main {
