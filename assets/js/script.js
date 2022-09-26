@@ -483,7 +483,7 @@ function battle() {
         playerDeck.shift();
         computerDeck.shift();
         document.getElementById('messagearea').style.visibility = "visible";
-        document.getElementById('popuptext').innerText = 'Winner... next card';
+        document.getElementById('popuptext').innerText = 'Win... next card';
 
         document.getElementById('playerscore').children[1].textContent = playerWins.length;
     } else if (fieldP < fieldC) {
@@ -493,7 +493,7 @@ function battle() {
         playerDeck.shift();
         computerDeck.shift();   
         document.getElementById('messagearea').style.visibility = "visible";
-        document.getElementById('popuptext').innerText = 'Loser... next card';
+        document.getElementById('popuptext').innerText = 'Lose... next card';
 
         document.getElementById('computerscore').children[1].textContent = computerWins.length;    
     } else if (fieldP == fieldC) {
@@ -544,21 +544,21 @@ function determineWinner() {
         document.getElementById('playercard').style.backgroundImage = "url('assets/images/tt-card-back1.png')";
         if (playerWins.length > computerWins.length) {
             document.getElementById('messagearea').style.visibility = "visible";
-            document.getElementById('popuptext').innerText = 'Win';
+            document.getElementById('popuptext').innerText = 'You win... play again';
 
             let myButton = document.getElementById('popuptext');
             myButton.addEventListener('click', nextGame);
 
         } else if (playerWins.length < computerWins.length) {
             document.getElementById('messagearea').style.visibility = "visible";
-            document.getElementById('popuptext').innerText = 'Lose';
+            document.getElementById('popuptext').innerText = 'You lose... play again';
             
             let myButton = document.getElementById('popuptext');
             myButton.addEventListener('click', nextGame);
             
         } else {
             document.getElementById('messagearea').style.visibility = "visible";
-            document.getElementById('popuptext').innerText = 'Draw';
+            document.getElementById('popuptext').innerText = 'You draw... play again';
 
             let myButton = document.getElementById('popuptext');
             myButton.addEventListener('click', nextGame);

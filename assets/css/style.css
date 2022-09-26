@@ -121,15 +121,14 @@ h2 {
     height: 6vh;
     text-align: left;
     position: relative;
-    left: 2%;
+    left: 3%;
+    top: 12%;
 }
 
 #playerscore p, #computerscore p {
     font-family: 'newrockerregular';
     font-size: large;
     text-shadow: rgb(194, 173, 142) 3px 0px 0px, rgb(194, 173, 142) 2.83487px 0.981584px 0px, rgb(194, 173, 142) 2.35766px 1.85511px 0px, rgb(194, 173, 142) 1.62091px 2.52441px 0px, rgb(194, 173, 142) 0.705713px 2.91581px 0px, rgb(194, 173, 142) -0.287171px 2.98622px 0px, rgb(194, 173, 142) -1.24844px 2.72789px 0px, rgb(194, 173, 142) -2.07227px 2.16926px 0px, rgb(194, 173, 142) -2.66798px 1.37182px 0px, rgb(194, 173, 142) -2.96998px 0.42336px 0px, rgb(194, 173, 142) -2.94502px -0.571704px 0px, rgb(194, 173, 142) -2.59586px -1.50383px 0px, rgb(194, 173, 142) -1.96093px -2.27041px 0px, rgb(194, 173, 142) -1.11013px -2.78704px 0px, rgb(194, 173, 142) -0.137119px -2.99686px 0px, rgb(194, 173, 142) 0.850987px -2.87677px 0px, rgb(194, 173, 142) 1.74541px -2.43999px 0px, rgb(194, 173, 142) 2.44769px -1.73459px 0px, rgb(194, 173, 142) 2.88051px -0.838247px 0px;
-    position: relative;
-    top: 2%;
 }
 
 #computerscore {
@@ -138,7 +137,8 @@ h2 {
     height: 6vh;
     text-align: right;
     position: relative;
-    right: 2%;
+    right: 3%;
+    top: 12%;
 }
 
 #cardarea {
@@ -284,22 +284,22 @@ th, td {
     
     #playerscore {
         font-family: 'newrockerregular';
-        font-size: 1.6rem;
-        width: 180px;
-        height: 12vh;
-        left: 6%;
+        text-align: center;
+        left: 16%;
     }
     
     #computerscore {
         font-family: 'newrockerregular';
-        font-size: 1.6rem;
-        width: 180px;
-        height: 12vh;
-        right: 6%;
+        text-align: center;
+        right: 16%;
+    }
+
+    #scorearea p {
+        font-size: 2rem;
     }
     
     #cardarea {
-        top: 6rem;
+        top: 12%;
         width: 700px;
     }
     
@@ -321,11 +321,7 @@ th, td {
         float: right;
         right: 4%;
     }
-    
-    table {
-        margin: 15% auto 0 auto;
-    }
-    
+      
     th, td {
         text-align: left;
         padding: 0 30px 0 0;
@@ -337,7 +333,7 @@ th, td {
     }
 
     table {
-        margin: 17% auto 0 auto;
+        margin: 7% auto 0 auto;
     }
     
     #name1, #name2 {
@@ -347,6 +343,6 @@ th, td {
     }
 
     #myPopup {
-        top: 10%;
+        top: 15%;
     }
 }
