@@ -462,7 +462,7 @@ function battle() {
     fieldP2.removeEventListener('click', setKillingPowerField);
     fieldP3.removeEventListener('click', setInfamyField);
     fieldP4.removeEventListener('click', setPersistenceField);
-    document.getElementById('computercard').style.backgroundImage = "url('assets/images/tt-card-front.png')";
+    document.getElementById('computercard').style.backgroundImage = "url('assets/images/tt-card-front1.png')";
     
     if (playerDeck.length === 0) {
         
@@ -522,7 +522,7 @@ function addListeners () {
     fieldP3.addEventListener('click', setInfamyField);
     fieldP4.addEventListener('click', setPersistenceField);
     playCards();
-    document.getElementById('computercard').style.backgroundImage = "url('assets/images/tt-card-back.png')";
+    document.getElementById('computercard').style.backgroundImage = "url('assets/images/tt-card-back1.png')";
     determineWinner();
 
 };
@@ -541,7 +541,7 @@ function determineWinner() {
                 alert('finish this game first!')
             }
         }
-        document.getElementById('playercard').style.backgroundImage = "url('assets/images/tt-card-back.png')";
+        document.getElementById('playercard').style.backgroundImage = "url('assets/images/tt-card-back1.png')";
         if (playerWins.length > computerWins.length) {
             document.getElementById('messagearea').style.visibility = "visible";
             document.getElementById('popuptext').innerText = 'Win';
