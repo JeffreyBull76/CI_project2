@@ -111,7 +111,6 @@ body {
 }
 
 .activecard {
-    display: relative;
     width: 215px;
     margin: 10px auto;
     height: 345px;
