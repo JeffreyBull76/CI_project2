@@ -530,26 +530,49 @@ function addListeners () {
 addListeners();
 
 //next game button reloads the page
-// function nextGame(event) {
-//     if (playerDeck.length === 0) {
-//         location.reload();
-//     } 
-// };
 
 function determineWinner() {
-    console.log('really now');
     
     if (playerDeck.length === 0) {
+        function nextGame() {
+            if (playerDeck.length === 0) {
+                location.reload();
+            } else {
+                alert('finish this game first!')
+            }
+        }
         document.getElementById('playercard').style.backgroundImage = "url('assets/images/tt-card-back.png')";
         if (playerWins.length > computerWins.length) {
             document.getElementById('messagearea').style.visibility = "visible";
             document.getElementById('popuptext').innerText = 'Win';
+
+            let myButton = document.getElementById('popuptext');
+            myButton.addEventListener('click', nextGame);
+
+            //setTimeout(nextGame, 1500);
         } else if (playerWins.length < computerWins.length) {
             document.getElementById('messagearea').style.visibility = "visible";
             document.getElementById('popuptext').innerText = 'Lose';
+            
+            let myButton = document.getElementById('popuptext');
+            myButton.addEventListener('click', nextGame);
+            
+            //setTimeout(nextGame, 1500);
         } else {
             document.getElementById('messagearea').style.visibility = "visible";
             document.getElementById('popuptext').innerText = 'Draw';
-        } 
-    }
+
+            let myButton = document.getElementById('popuptext');
+            myButton.addEventListener('click', nextGame);
+
+            //setTimeout(nextGame, 1500);
+        }; 
+    };
 };
+
+// function nextGame() {
+//     location.reload()
+// };
+
+let nextGameButton = document.getElementById('popuptext').innerText;
+nextGameButton.addEventListener('click', nextGame);
