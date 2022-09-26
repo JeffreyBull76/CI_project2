@@ -336,28 +336,30 @@ shuffle(card);
 let playerDeck = card.slice(0, 20);
 let computerDeck = card.slice(19, 40);
 
+// play cards function
+
 function playCards () {
     let activePlayerCard = playerDeck[0];
     let activeComputerCard = computerDeck[0];
-
-    console.log(playerDeck);
-    console.log(computerDeck);
 
     if (playerDeck.length === 0) {
 
         document.getElementById('name1').innerText = null;
         document.getElementById('playercard').children[0].outerHTML = null;
-        document.getElementById('fearfactor1').innerText = null;
-        document.getElementById('killingpower1').innerText = null;
-        document.getElementById('infamy1').innerText = null;
-        document.getElementById('persistence1').innerText = null;
 
         document.getElementById('name2').innerText = null;
         document.getElementById('computercard').children[0].outerHTML = null;
-        document.getElementById('fearfactor2').innerText = null;
-        document.getElementById('killingpower2').innerText = null;
-        document.getElementById('infamy2').innerText = null;
-        document.getElementById('persistence2').innerText = null;
+
+        document.getElementById('fearfactor1').parentElement.hidden = true;
+        document.getElementById('killingpower1').parentElement.hidden = true;
+        document.getElementById('infamy1').parentElement.hidden = true;
+        document.getElementById('persistence1').parentElement.hidden = true;
+
+        document.getElementById('fearfactor2').parentElement.hidden = true;
+        document.getElementById('killingpower2').parentElement.hidden = true;
+        document.getElementById('infamy2').parentElement.hidden = true;
+        document.getElementById('persistence2').parentElement.hidden = true;
+
     } else {
 
         document.getElementById('name1').innerText = activePlayerCard.name;
@@ -463,7 +465,7 @@ function battle() {
     document.getElementById('computercard').style.backgroundImage = "url('assets/images/tt-card-front.png')";
     
     if (playerDeck.length === 0) {
-        console.log('game over');
+        
         document.getElementById('fearfactor2').parentElement.hidden = true;
         document.getElementById('killingpower2').parentElement.hidden = true;
         document.getElementById('infamy2').parentElement.hidden = true;
@@ -472,6 +474,7 @@ function battle() {
         document.getElementById('killingpower1').parentElement.hidden = true;
         document.getElementById('infamy1').parentElement.hidden = true;
         document.getElementById('persistence1').parentElement.hidden = true;
+
     } else {
         if (fieldP > fieldC) {
         console.log('win')
@@ -520,7 +523,9 @@ function addListeners () {
     fieldP4.addEventListener('click', setPersistenceField);
     playCards();
     document.getElementById('computercard').style.backgroundImage = "url('assets/images/tt-card-back.png')";
-}
+    determineWinner();
+
+};
 
 addListeners();
 
@@ -528,10 +533,23 @@ addListeners();
 // function nextGame(event) {
 //     if (playerDeck.length === 0) {
 //         location.reload();
-//     } else {
-//         alert('finish this game first!')
-//     }
-// }
+//     } 
+// };
 
-// let myButton = document.getElementById('next-game');
-// myButton.addEventListener('click', nextGame);
+function determineWinner() {
+    console.log('really now');
+    
+    if (playerDeck.length === 0) {
+        document.getElementById('playercard').style.backgroundImage = "url('assets/images/tt-card-back.png')";
+        if (playerWins.length > computerWins.length) {
+            document.getElementById('messagearea').style.visibility = "visible";
+            document.getElementById('popuptext').innerText = 'Win';
+        } else if (playerWins.length < computerWins.length) {
+            document.getElementById('messagearea').style.visibility = "visible";
+            document.getElementById('popuptext').innerText = 'Lose';
+        } else {
+            document.getElementById('messagearea').style.visibility = "visible";
+            document.getElementById('popuptext').innerText = 'Draw';
+        } 
+    }
+};
