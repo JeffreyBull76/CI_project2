@@ -83,10 +83,25 @@ h2 {
     height: 800px;
 }
 
-#main p, #main h2 {
+#main p {
+    text-align: left;
+    position: relative;
+    top: 12%;
+    font-size: 0.9rem;
+}
+
+#main h2 {
     text-align: center;
     position: relative;
     top: 12%;
+}
+
+#main h3 {
+    text-align: center;
+    position: relative;
+    top: 12%;
+    font-family: 'newrockerregular', serif;
+    font-size: x-large;
 }
 
 #footer {
@@ -255,6 +270,7 @@ th, td {
         margin: auto;
         width: 500px;
         height: 800px;
+
     }
 
     #main p, #main h2 {
@@ -269,6 +285,10 @@ th, td {
 
     h1 {
         font-size: 2.4rem;
+    }
+
+    #main h3 {
+        top: 10%;
     }
     
     body {
