@@ -549,7 +549,6 @@ function determineWinner() {
             let myButton = document.getElementById('popuptext');
             myButton.addEventListener('click', nextGame);
 
-            //setTimeout(nextGame, 1500);
         } else if (playerWins.length < computerWins.length) {
             document.getElementById('messagearea').style.visibility = "visible";
             document.getElementById('popuptext').innerText = 'Lose';
@@ -557,7 +556,6 @@ function determineWinner() {
             let myButton = document.getElementById('popuptext');
             myButton.addEventListener('click', nextGame);
             
-            //setTimeout(nextGame, 1500);
         } else {
             document.getElementById('messagearea').style.visibility = "visible";
             document.getElementById('popuptext').innerText = 'Draw';
@@ -565,14 +563,6 @@ function determineWinner() {
             let myButton = document.getElementById('popuptext');
             myButton.addEventListener('click', nextGame);
 
-            //setTimeout(nextGame, 1500);
         }; 
     };
 };
-
-// function nextGame() {
-//     location.reload()
-// };
-
-let nextGameButton = document.getElementById('popuptext').innerText;
-nextGameButton.addEventListener('click', nextGame);
