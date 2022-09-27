@@ -61,7 +61,7 @@ function playCards () {
         document.getElementById('name2').innerText = activeComputerCard.name;
         document.getElementById('name2').hidden = true;
         document.getElementById('computercard').children[0].outerHTML = `<picture> 
-        <source media="(max-width: 767px)" srcset=${activeComputerCard.image} width="165" height="165">
+        <source media="(max-width: 767px)" srcset=${activeComputerCard.image} width="115" height="115">
         <img src=${activeComputerCard.image} alt="working resize test" width="230" height="230">
         </picture>`;
         document.getElementById('computercard').children[0].style.visibility = "hidden";
