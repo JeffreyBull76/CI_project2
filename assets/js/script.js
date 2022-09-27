@@ -2,10 +2,10 @@ var playerWins = [];
 var computerWins = [];
 
 /**
- * Below is some rudimentary code to create two arrays based on a randomised shuffle or the main arrary 
- * link to splice method
+ * Below is code to create two arrays based on a randomised shuffle of the main arrary 
+ * link to splice method below
  * https://thewebdev.info/2022/06/26/how-to-split-array-into-two-arrays-with-javascript/#:~:text=To%20split%20array%20into%20two%20arrays%20with%20JavaScript%2C%20we%20can,indexToSplit)%3B%20const%20second%20%3D%20arr.
- * links to randomiser
+ * links to randomiser below
  * https://javascript.info/task/shuffle (shuffle array)
  */
 
@@ -22,7 +22,11 @@ shuffle(card);
 let playerDeck = card.slice(0, 20);
 let computerDeck = card.slice(19, 40);
 
-// play cards function
+/**
+ * The function below runs when each card has battled the other
+ * It runs through and removes values if no cards are left (depreciated but left for clean running)
+ * it then pulls the cards from the player and computer decks respectively and passes their values to the corresponding html element
+ */
 
 function playCards () {
     let activePlayerCard = playerDeck[0];
@@ -79,6 +83,11 @@ function playCards () {
 }
 
 playCards();
+
+/**
+ * Below are the code blocks which set the active field variables based on which number the user clicks
+ * It sets those and then runs the battle function
+ */
 
 let fieldP; 
 let fieldC;
@@ -143,6 +152,14 @@ function setPersistenceField() {
     battle();
 }
 
+/**
+ * Battle function removes listeners to prevent users clicking fields while no active card is present
+ * The it flips the computers card by replacing its background image.
+ * Then checks if either player has won at a score of 21 if not then executes a code which 
+ * compares the active fields, determines a winner, pulls both cards from active card area
+ * pushes them to relevant score pile, updates the score then runs a function which allows the popup to be clicked for next card
+ */
+
 function battle() {
     fieldP1.removeEventListener('click', setFearFactorField);
     fieldP2.removeEventListener('click', setKillingPowerField);
@@ -197,8 +214,10 @@ function battle() {
 
 }}
 
+/**
+ * Battle function listeners which are adde each round and runs determine winner function
+ */
 
-//battle function listener
 function addListeners () {
     document.getElementById('messagearea').style.visibility = "hidden";
     fieldP1.addEventListener('click', setFearFactorField);
@@ -222,6 +241,11 @@ function nextGame() {
         alert('finish this game first!');
     }
 }
+
+/**
+ * check to see if win conditions are met then executes 
+ * allows user to select next game 
+ */
 
 function determineWinner() {
     
