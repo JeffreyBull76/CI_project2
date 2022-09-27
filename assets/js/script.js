@@ -28,7 +28,7 @@ function playCards () {
     let activePlayerCard = playerDeck[0];
     let activeComputerCard = computerDeck[0];
 
-    if (playerDeck.length === 0) {
+    if ((playerWins.length >= 21) || (computerWins.length >= 21)) {
 
         document.getElementById('name1').innerText = null;
         document.getElementById('playercard').children[0].outerHTML = null;
@@ -150,7 +150,7 @@ function battle() {
     fieldP4.removeEventListener('click', setPersistenceField);
     document.getElementById('computercard').style.backgroundImage = "url('assets/images/tt-card-front1.png')";
     
-    if (playerDeck.length === 0) {
+    if ((playerWins.length >= 21) || (computerWins.length >= 21)) {
         
         document.getElementById('fearfactor2').parentElement.hidden = true;
         document.getElementById('killingpower2').parentElement.hidden = true;
@@ -216,7 +216,7 @@ addListeners();
 //next game button reloads the page
 
 function nextGame() {
-    if (playerDeck.length === 0) {
+    if ((playerWins.length >= 21) || (computerWins.length >= 21)) {
         location.reload();
     } else {
         alert('finish this game first!');
@@ -225,7 +225,7 @@ function nextGame() {
 
 function determineWinner() {
     
-    if (playerDeck.length === 0) {
+    if ((playerWins.length >= 21) || (computerWins.length >= 21)) {
         
         document.getElementById('playercard').style.backgroundImage = "url('assets/images/tt-card-back1.png')";
         if (playerWins.length > computerWins.length) {
