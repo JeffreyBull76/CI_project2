@@ -1,4 +1,4 @@
-const card = [{
+var card = [{
     name: 'Dracula',
     image: "assets/images/dracula-cardpic.png",
     ffactor: 78,
