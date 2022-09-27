@@ -1,9 +1,11 @@
 # **HORROR TOP TRUMPS**
 
-add this to tech used (text shadow generator)
-http://owumaro.github.io/text-stroke-generator/
+Based on the popular card game of the late 80s called top trumps.
 
-![]()
+This game seeks to give a flavour of the game using some basic javascript.
+The subject matter is famous horror film villains.
+
+![](assets/images/toptriumps-amiresponsive.png)
 
 -----------------------------------------
 
