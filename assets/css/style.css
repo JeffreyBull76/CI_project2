@@ -93,7 +93,7 @@ h2 {
 }
 
 .breakheading {
-    margin: 20px 0;
+    margin: 30px 0;
     text-align: center;
 }
 
@@ -132,6 +132,9 @@ h2 {
 
 /* game page styles */
 
+
+/* score area */
+
 #scorearea {
     width: 320px;
     margin: auto;
@@ -164,6 +167,8 @@ h2 {
     top: 12%;
 }
 
+/* card area */
+
 #cardarea {
     position: relative;
     top: 0;
@@ -184,6 +189,8 @@ h2 {
     text-align: center;
     position: relative;
 }
+
+/* card elements */
 
 picture {
     position: relative;
@@ -213,7 +220,7 @@ img {
     font-weight: lighter;
     font-size: 1.5rem;
     text-shadow: rgb(194, 173, 142) 3px 0px 0px, rgb(194, 173, 142) 2.83487px 0.981584px 0px, rgb(194, 173, 142) 2.35766px 1.85511px 0px, rgb(194, 173, 142) 1.62091px 2.52441px 0px, rgb(194, 173, 142) 0.705713px 2.91581px 0px, rgb(194, 173, 142) -0.287171px 2.98622px 0px, rgb(194, 173, 142) -1.24844px 2.72789px 0px, rgb(194, 173, 142) -2.07227px 2.16926px 0px, rgb(194, 173, 142) -2.66798px 1.37182px 0px, rgb(194, 173, 142) -2.96998px 0.42336px 0px, rgb(194, 173, 142) -2.94502px -0.571704px 0px, rgb(194, 173, 142) -2.59586px -1.50383px 0px, rgb(194, 173, 142) -1.96093px -2.27041px 0px, rgb(194, 173, 142) -1.11013px -2.78704px 0px, rgb(194, 173, 142) -0.137119px -2.99686px 0px, rgb(194, 173, 142) 0.850987px -2.87677px 0px, rgb(194, 173, 142) 1.74541px -2.43999px 0px, rgb(194, 173, 142) 2.44769px -1.73459px 0px, rgb(194, 173, 142) 2.88051px -0.838247px 0px;
-    top: 10%;
+    top: 8%;
 }
 
 #name2 {
@@ -229,7 +236,7 @@ img {
 table {
     margin: 7% auto 3% auto;
     position: relative;
-    top: 3%;
+    top: 7%;
 }
 
 th, td {
@@ -246,7 +253,7 @@ th, td {
 }
 
 .computertable {
-    top: -8px;
+    top: 5%;
 }
 
 .computervalue {
@@ -416,7 +423,7 @@ th, td {
 
     .computertable {
         margin: 7% auto 0 auto;
-        top: 3%;
+        top: 7%;
     }
     
     .computervalue {
