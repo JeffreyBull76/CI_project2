@@ -24,25 +24,21 @@ The subject matter is famous horror film villains.
 
 ## [**Features**](<#features-1>)
    * [**Navigation**](<#navigation>)
-   * [**Mobile Navigation**](<#mobile-navigation>)
-   * [**Main Page**](<#main-page>)
-      * [**Landing Section**](<#landing-section>)
-      * [**About Section**](<#about-section>)
-   * [**Discover Page**](<#discover-page>)
-   * [**Contact Page**](<#contact-page>)
    * [**Future roadmap**](<#future-roadmap>)
 
 ## [**TECHNOLOGY**](<#technology-1>)
    * HTML5
    * CSS
+   * Javascript
    * Gitpod
    * Github
    * GIMP
-   * Inkscape
+   * Midjourney
 
 ## [**TESTING**](<#testing-1>)
    * [**W3C HTML**](<#w3c-html>)
    * [**JIGSAW**](<#jigsaw-css>)
+   * [**JSHINT**](<#jshint>)
    * [**LIGHTHOUSE**](<#lighthouse>)
    * [**UNFIXED BUGS**](<#unfixed-bugs>)
 
@@ -61,30 +57,55 @@ The subject matter is famous horror film villains.
 ## Early Concept
 
    * ### Design Ethos
-
+   * The basic design required a simple landing page and a link to the game page
+      * I wanted this to have a gothic horror feel in terms of design
+      * Midjourney was used to create the graphical elements
+      * I wanted the experience to be clear and concise
 
 ![]()
-
 
 [Go back](<#table-of-contents>)
 -----------------------------------------
 
  * ### Typography
+ * The fonts chose for the site were
+      * Alice from googlefonts
+      * New Rocker from font squirrel 
+ * Fonts were chosent to keep in line with the gothic horror feel while remaining readable.
 
 [Go back](<#table-of-contents>)
 -----------------------------------------
 
  * ### Colors
+ * Colours denoting a dark gothic feel were chosen
+     * Bone color (various shades)
+     * Black 
+     * Red 
+ * These were picked to keep in line with the graphical elements and create a washed out dark gothic feeling.
+ 
 
 [Go back](<#table-of-contents>)
 -----------------------------------------
 
  * ### Coding
+ * All code was written from scratch except were explicitly stated below:
+
+   * The splice method was taken from here and adapted for use in my code
+     * [Splice method guide](https://thewebdev.info/2022/06/26/how-to-split-array-into-two-arrays-with-javascript/)
+ 
+   * The randomiser code was taken from here and used to shuffle the card array ready for splicing. This was required so that the cards for each player were different each game
+     * [Randomiser code](https://javascript.info/task/shuffle)
+ 
+   * The text shadows were created using this code generator 
+     * [Text shadow generator](http://owumaro.github.io/text-stroke-generator/)
 
 [Go back](<#table-of-contents>)
 -----------------------------------------
 
 * ### Development process
+* Git Commits - I attempted to commit often especially with the complexity of the JS      
+* Code Comments - Comments have been added to all files to make future editing easier
+* JS comments - I left fairly verbose comments in to describe the more complex code blocks
    
 [Go back](<#table-of-contents>)
 -----------------------------------------
@@ -100,72 +121,39 @@ The subject matter is famous horror film villains.
 [Go back](<#features>)
 -----------------------------------------
 
-* ### Mobile Navigation
-
-![]()
-
-[Go back](<#features>)
------------------------------------------
-
-* ### Main Page
-   * ### Landing section
-     
-
-![]()
-
-[Go back](<#features>)
------------------------------------------
-
-   * ### About Section
-
-![]()
-
-[Go back](<#features>)
---------------------------------
-
-* ## Discover Page
- 
-![]()
-
-[Go back](<#features>)
------------------------------------------
-
-* ## Contact Page
-
-![]()
-
-[Go back](<#features>)
------------------------------------------
-
 * ## Future roadmap
 
 [Go back](<#features>)
 -----------------------------------------
 * ## Technology
+   * HTML - used for main structure of site
+   * CSS - external stylesheet used to apply visual style, effect and functionality to the html
+   * Javascipt - two external sheets for game code
+   * GIThub - used for hosting and editing the site via a repository
+   * GITpod - used to deploy the site and edit the code via a workspace in chrome
+   * GIMP - open source raster image editing software used to alter, crop and scale the photographic elements
+   * Midjourney - Used for creating art assets
 
 [Go back](<#table-of-contents>)
 -----------------------------------------
 
 * ## Testing
 
-* ### JS Checker
-
 * ### W3C HTML
 
 * ### JIGSAW CSS
 
+* ### JSHINT
+
 * ### Lighthouse
    * See output for lighthouse tests on each page
 
-  *  Index Page
+  *  Landing Page
   *  ![]()
    
-  *  Discover Page
+  *  Game page
   *  ![]()
    
-  *  Contact Form
-  *  ![]()
-
 * ### Unfixed bugs
 
 [Go back](<#table-of-contents>)
@@ -196,11 +184,13 @@ The subject matter is famous horror film villains.
 -----------------------------------------
 
 * ## Content
+* ADD DETAILS OF SITE CONTENT HERE 
 
 [Go back](<#table-of-contents>)
 -----------------------------------------
 
 * ## Final Thoughts
+* THANK YOUS, THOUGHTS, GENERAL COMMENTS
  
 [Go back](<#table-of-contents>)
 -----------------------------------------
