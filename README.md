@@ -130,26 +130,44 @@ The subject matter is famous horror film villains.
 ## Features
 
 * ### Landing page 
-* Full size landing page 
-![](assets/images/toptriumps-finaldesign.png)
-[Horror Top Trumps Landing Page](https://jeffreybull76.github.io/CI_project2/)
-* Mobile size landing page 
-![](assets/images/toptriumps-finaldesignmob.png)
-
 * An early decision was made to have two simple versions of the site across all browsers. As the images used are all detailed raster graphics I needed to avoid ugly resizing. I felt a mobile or 'small screen' version under 768px in size and a single layout for all screen sizes above that was best.
 * The site was designed mobile first and then a media query is used to restyle elements on larger screens. 
 * I Received feedback on various early drafts about making the rules clearer. Hopefully the final design conveys the rules of the game in a more concise way.
 * As this page is mostly static I encountered very few problems coding it. Fixed sizes were used to minimise scaling and display issues.
+* See below for visual examples
+
+* Full size landing page 
+* ![](assets/images/toptriumps-finaldesign.png)
+[Horror Top Trumps Landing Page](https://jeffreybull76.github.io/CI_project2/)
+* Mobile size landing page 
+* ![](assets/images/toptriumps-finaldesignmob.png)
+
+-----------------------------------------
    
 * ### Game page
+* The meat and potatoes (so to speak) of the project rests here. This went through numerous ittertions. 
+* The full size version was easier to design, it simply needed the two cards to be displayed in the game area side by side with the computers card hidden.
+* This was achieved with a mixture of CSS styles and template literals passed by the JS code to the live page on user interaction.
+     * On load the array of cards (held in a separate JS file) is randomly shuffled and the spliced into two decks of 20, these are held in two arrays the player and computer deck.
+     * Once done the 'play cards' function runs (inside the listeners function), this sets the 'active card' for each player by grabbing the first card from each deck.
+     * Then it loads the values of those cards into the HTML so the player can see their card. Also this 'hides' the computers card setting its 'hidden' values to true. 
+         * Within this a template literal was used for loading responsive images which changed based on browser size.
+     * Each round starts when the player selects a number. It first sets the active field with a fairly simple function, this was done to prevent multiple fields being clicked. By having the active field stored in its own variable I was able to isolate the players selection, then remove the listeners until a new card was dealt.
+     * It then runs two other functions and 'flips' the computer card by changing its background image.
+         * It then runs the 'playcards' function and then the 'determine winner' function in turn
+         * 
+     * It changes the background image and unhides the text & image elements of the computers card, to give an illusion of the card being turned over. 
+     * On doing so the JS adds the clicked field to a variable which is then passed to a function which does a few things
+         * It first checks if the game is over by tracking the first to 21 points
+         * If this is not the case it then runs through 
+
 * Full size Game page 
-![](assets/images/toptriumps-finaldesign2.png)
+* ![](assets/images/toptriumps-finaldesign2.png)
 * [Horror Top Trumps Game Page](https://jeffreybull76.github.io/CI_project2/gamepage.html)
 * Mobile size landing page 
-![](assets/images/toptriumps-finaldesignmob2.png)
+* ![](assets/images/toptriumps-finaldesignmob2.png)
 
-
-* The meat and potatoes (so to speak) of the project rests here. This
+-----------------------------------------
 
 * ### Future roadmap
 
