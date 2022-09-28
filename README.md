@@ -6,6 +6,7 @@ This game seeks to give a flavour of the game using some basic javascript.
 The subject matter is famous horror film villains.
 
 ![](assets/images/toptriumps-amiresponsive.png)
+[Horror Top Trumps Live Site](https://jeffreybull76.github.io/CI_project2/)
 
 -----------------------------------------
 
@@ -129,7 +130,13 @@ The subject matter is famous horror film villains.
 ## Features
 
 * ### Landing page 
+![](assets/images/toptriumps-finaldesign.png)
+[Horror Top Trumps Landing Page](https://jeffreybull76.github.io/CI_project2/)
+   
 * ### Game page
+![](assets/images/toptriumps-finaldesign2.png)
+[Horror Top Trumps Landing Page](https://jeffreybull76.github.io/CI_project2/gamepage.html)
+
 * ### Future roadmap
 
 ![]()
