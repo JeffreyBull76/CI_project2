@@ -81,7 +81,7 @@ The subject matter is famous horror film villains.
 -----------------------------------------
 
  * ### Typography
- * The fonts chose for the site were
+ * The fonts chosen for the site were
       * Alice from googlefonts - Using the standard embedded code method
       * New Rocker from font squirrel - This required using their onsite webfont generator and uploading the files to my repo
  * Fonts were chosen to keep in line with the gothic horror feel while remaining readable.
@@ -111,7 +111,7 @@ The subject matter is famous horror film villains.
    * The text shadows were created using this code generator 
      * [Text shadow generator](http://owumaro.github.io/text-stroke-generator/)
 
-   * Lessons learned - As the functions and interactions of the game becmae more complex from the test to live version, many errors were introduced relating to calling functions in the correct order. I attempted to keep the code as clear as possible from errors, but as I was learning while doing it there are some areas of code are probably far more complex and less concise than is required.
+   * Lessons learned - As the functions and interactions of the game becmae more complex from the test to live version, many errors were introduced relating to calling functions in the correct order. I attempted to keep the code as clear as possible from errors, but as I was learning while doing it there are some areas that are far more complex and less concise than is required.
 
 [Go back](<#table-of-contents>)
 -----------------------------------------
@@ -120,7 +120,7 @@ The subject matter is famous horror film villains.
 * Git Commits - I attempted to commit often especially with the complexity of the JS      
 * Code Comments - Comments have been added to all files to make future editing easier
 * JS comments - I left fairly verbose comments in to describe the more complex code blocks
-* What I'd do differently - More so than the first project I feel this one taught me how complex code become and how adding seemingly small features or ideas can exponentially balloon the complexity of said code out of control. This was a very simply 1 page game, I can see clearer than before how a methodical and clear process would be paramount on a project of any real size.
+* What I'd do differently - More so than the first project I feel this one taught me how complex code can become when adding even seemingly small features or ideas. They can exponentially balloon the complexity of said code out of control, and it becomes hard to maintain. This was a very simple 1 page game, it is now more obvious to me than before, how a methodical and clear process would be of paramount importance on a project larger in scope and size.
    
 [Go back](<#table-of-contents>)
 -----------------------------------------
@@ -184,6 +184,7 @@ The subject matter is famous horror film villains.
 * ### Future roadmap
 
 * I intended to add sound effects, preferably specific to each character which would play on win or lose. This was beyond the scope of the project in terms of the time I had.
+* Clean up the JS and make the functions more concise.
 * Another possible feature would be a dealing animation which displayed the cards in both players decks. This would have significantly increased the workload to produce the finished game. Also it would have made the mobile version more difficult to display or simply be redundant on small screens. But it is something to consider.
 * If the game required other subjects the landing page could be completely reworked so that you select a deck type, then it loads the relevant theme and deck. Other ideas would be superheros, cars, dinosaurs etc. This was well beyond the scope of the project but would be fairly easy to do by simply using the same code and altering the graphical elements.
 
