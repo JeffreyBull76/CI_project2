@@ -82,8 +82,6 @@ function playCards () {
 
 }
 
-playCards();
-
 /**
  * Below are the code blocks which set the active field variables based on which number the user clicks
  * It sets those and then runs the battle function
@@ -167,19 +165,7 @@ function battle() {
     fieldP4.removeEventListener('click', setPersistenceField);
     document.getElementById('computercard').style.backgroundImage = "url('assets/images/tt-card-front1.png')";
     
-    if ((playerWins.length >= 21) || (computerWins.length >= 21)) {
-        
-        document.getElementById('fearfactor2').parentElement.hidden = true;
-        document.getElementById('killingpower2').parentElement.hidden = true;
-        document.getElementById('infamy2').parentElement.hidden = true;
-        document.getElementById('persistence2').parentElement.hidden = true;
-        document.getElementById('fearfactor1').parentElement.hidden = true;
-        document.getElementById('killingpower1').parentElement.hidden = true;
-        document.getElementById('infamy1').parentElement.hidden = true;
-        document.getElementById('persistence1').parentElement.hidden = true;
-
-    } else {
-        if (fieldP > fieldC) {
+    if (fieldP > fieldC) {
         playerWins.push(playerDeck[0]);
         playerWins.push(computerDeck[0]);
         playerDeck.shift();
@@ -212,7 +198,7 @@ function battle() {
     let nextCard = document.getElementById('popuptext');
     nextCard.addEventListener('click', addListeners);
 
-}}
+}
 
 /**
  * Battle function listeners which are adde each round and runs determine winner function
