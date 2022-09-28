@@ -197,6 +197,7 @@ function battle() {
     
     let nextCard = document.getElementById('popuptext');
     nextCard.addEventListener('click', addListeners);
+    
 
 }
 

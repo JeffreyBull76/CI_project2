@@ -129,7 +129,7 @@ The subject matter is famous horror film villains.
 
 ## Features
 
-* ### Landing page 
+* ### LANDING PAGE
 * An early decision was made to have two simple versions of the site across all browsers. As the images used are all detailed raster graphics I needed to avoid ugly resizing. I felt a mobile or 'small screen' version under 768px in size and a single layout for all screen sizes above that was best.
 * The site was designed mobile first and then a media query is used to restyle elements on larger screens. 
 * I Received feedback on various early drafts about making the rules clearer. Hopefully the final design conveys the rules of the game in a more concise way.
@@ -138,32 +138,43 @@ The subject matter is famous horror film villains.
 
 * Full size landing page 
 * ![](assets/images/toptriumps-finaldesign.png)
-[Horror Top Trumps Landing Page](https://jeffreybull76.github.io/CI_project2/)
+* [Horror Top Trumps Landing Page](https://jeffreybull76.github.io/CI_project2/)
 * Mobile size landing page 
 * ![](assets/images/toptriumps-finaldesignmob.png)
 
 -----------------------------------------
    
-* ### Game page
+* ## GAME PAGE
+* ### FULL SIZE SITE
 * The meat and potatoes (so to speak) of the project rests here. This went through numerous ittertions. 
 * The full size version was easier to design, it simply needed the two cards to be displayed in the game area side by side with the computers card hidden.
+* Two simple floated score areas site at the top with a centered background.
+* The cards themselves are pulled from the array loaded in a separate JS file.
 * This was achieved with a mixture of CSS styles and template literals passed by the JS code to the live page on user interaction.
-     * On load the array of cards (held in a separate JS file) is randomly shuffled and the spliced into two decks of 20, these are held in two arrays the player and computer deck.
-     * Once done the 'play cards' function runs (inside the listeners function), this sets the 'active card' for each player by grabbing the first card from each deck.
-     * Then it loads the values of those cards into the HTML so the player can see their card. Also this 'hides' the computers card setting its 'hidden' values to true. 
+     * On load the array of cards is randomly shuffled and then spliced into two decks of 20, these are held in two arrays the player and computer deck.
+     * Once done the 'add listeners' function runs. It first sets the active field with a fairly simple function, this was done to prevent multiple fields being clicked. By having the active field stored in its own variable I was able to isolate the players selection, then remove the listeners until a new card was dealt.
+     * Once the on click listeners are added it runs the 'play cards' function which simply check for a win condition (and removes all values if true) or deals a new card.
+     * It loads the values of those cards into the HTML so the player can see their card. Also this 'hides' the computers card setting its 'hidden' values to true. 
          * Within this a template literal was used for loading responsive images which changed based on browser size.
-     * Each round starts when the player selects a number. It first sets the active field with a fairly simple function, this was done to prevent multiple fields being clicked. By having the active field stored in its own variable I was able to isolate the players selection, then remove the listeners until a new card was dealt.
-     * It then runs two other functions and 'flips' the computer card by changing its background image.
-         * It then runs the 'playcards' function and then the 'determine winner' function in turn
-         * 
-     * It changes the background image and unhides the text & image elements of the computers card, to give an illusion of the card being turned over. 
-     * On doing so the JS adds the clicked field to a variable which is then passed to a function which does a few things
-         * It first checks if the game is over by tracking the first to 21 points
-         * If this is not the case it then runs through 
+         * The play cards function in simple terms just deals the next card or flips both card face down when the game is over
 
-* Full size Game page 
+     * Each round starts when the player selects a number. It uses listeneres on each field to return a value to a corresponding function.
+     * It then runs a function which returns the clicked value to two variables 'FieldP' and 'FieldC' these are the values which are used to battle each other.
+         * It then unhides the computers card and runs the battle function. This in simple terms simply checks which value wins. It also importantly removes the listeners from all fields. This prevents simply spam clicking the fields while the game is paused and means the player must advance the game to continue.
+         * Depending which card won both active cards are then pushed into a new array either playerWins or computerWins respectively, this removes those two cards from the active deck allowing for a new card to be dealt. It then updates the scores by simply counting the length of each array.
+         * It also checks for a winner each time the listeners are added and terminates the game if required.
+         * If no winner has been determined the whole process loops back round
+   * Early test version used a simple timeout function to deal a new card after a few seconds of selecting a field as seen [HERE](https://jeffreybull76.github.io/Card_Array_Test/) this was suboptimal as it meant the user lacked control over their experience.
+   * In the live version a hidden popup div is used (centered and invisible on page load) which then displays when each card battle occurs, this unhides the popup allowing the user to progress the game. 
+   * This same popup is used at game over to run a new game (simply reloading the page)
 * ![](assets/images/toptriumps-finaldesign2.png)
 * [Horror Top Trumps Game Page](https://jeffreybull76.github.io/CI_project2/gamepage.html)
+
+
+* ### SMALL SCREEN SITE
+* The only real change for the mobile version is in display layout. 
+* Early version saw both cards full size one above the other (stacked horizontally) this meant to see the other card scrolling was required. Listening to feedback from my mentor a decision was made to make the computer card smaller. As no interaction with it is required its just for a visual cue, and having the game take place on one page without the need to scroll was preferable.
+
 * Mobile size landing page 
 * ![](assets/images/toptriumps-finaldesignmob2.png)
 
