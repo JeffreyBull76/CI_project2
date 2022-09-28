@@ -251,7 +251,7 @@ The subject matter is famous horror film villains.
    * In the GitHub repository, navigate to the Settings tab 
    * From the source section drop-down menu, select the Master Branch
    * Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
-      * The live link can be found - [Here](https://jeffreybull76.github.io/CI_Project2/index.html)
+      * The live link can be found - [Here](https://jeffreybull76.github.io/CI_project2/)
 
 * ### Forking the repository
    * A copy of the GitHub Repository can be made by forking the GitHub account. This copy can be viewed and changes can be made to the copy without affecting the original repository. Take the following steps to fork the repository;
