@@ -61,8 +61,19 @@ The subject matter is famous horror film villains.
       * I wanted this to have a gothic horror feel in terms of design
       * Midjourney was used to create the graphical elements
       * I wanted the experience to be clear and concise
-
-![]()
+   * I decided early on to not follow a specific tutorial to build the game. I wanted the experience (for better and worse) of writing something from the ground up. As is detailed below I did use a pre-written randomise function and simply adapted it to the game.
+   
+   * ## Rough Test Version
+   ![](assets/images/toptriumps-earlyconcept.png)
+   [Link to live site](https://jeffreybull76.github.io/Card_Array_Test/)
+   [Link to git repo](https://github.com/JeffreyBull76/Card_Array_Test)
+   
+   
+   * The above is the first very rough mock up of how the game page might look. 
+   * Bold colours were used for test purposes and all code has console logs left in
+   * Code comments were left out as it was purely for my own use. It is provided here to show how the concept went from that to what the site ended up with.
+   * I felt it important to test the actual concept outside of writing the project for real to see if it was something I could feasibly complete.
+   * You will note this version uses more crude methods such as timeouts to progress the game and has a different win condition (among many other changes) 
 
 [Go back](<#table-of-contents>)
 -----------------------------------------
@@ -71,19 +82,18 @@ The subject matter is famous horror film villains.
  * The fonts chose for the site were
       * Alice from googlefonts
       * New Rocker from font squirrel 
- * Fonts were chosent to keep in line with the gothic horror feel while remaining readable.
+ * Fonts were chosen to keep in line with the gothic horror feel while remaining readable.
 
 [Go back](<#table-of-contents>)
 -----------------------------------------
 
  * ### Colors
- * Colours denoting a dark gothic feel were chosen
-     * Bone color (various shades)
-     * Black 
-     * Red 
+ * The following general color palette was chosen. I wasn't able to narrow this down to 4 specific colours as heavy detailed raster graphics are used extensively so it felt wrong. But overall the colours used fall into the following general tones.
+     * Bone color / yellowy off white
+     * Dark black 
+     * Reds
  * These were picked to keep in line with the graphical elements and create a washed out dark gothic feeling.
  
-
 [Go back](<#table-of-contents>)
 -----------------------------------------
 
@@ -106,6 +116,7 @@ The subject matter is famous horror film villains.
 * Git Commits - I attempted to commit often especially with the complexity of the JS      
 * Code Comments - Comments have been added to all files to make future editing easier
 * JS comments - I left fairly verbose comments in to describe the more complex code blocks
+* What I'd do differently
    
 [Go back](<#table-of-contents>)
 -----------------------------------------
