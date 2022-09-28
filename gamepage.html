@@ -19,11 +19,11 @@
 <body id="gamebackgnd">
     
     <div id="scorearea">
-        <div id="playerscore">
+        <div id="playerscore" aria-label="player score">
             <p>Your score</p>
             <p>0</p>
         </div>
-        <div id="computerscore">
+        <div id="computerscore" aria-label="computer score">
             <p>Their score</p>
             <p>0</p>
         </div>
@@ -31,11 +31,11 @@
     
     <div id="cardarea">
         <div class="activecard" id="playercard">
-            <picture class="cardimage">
+            <picture class="cardimage" aria-label="current player card image">
                 <source media="(max-width: 799px)" srcset="assets/images/alien-cardpic.png" width="1" height="1">
                 <img src="assets/images/alien-cardpic.png" alt="working resize test" width="1" height="1">
                 </picture>
-            <p id="name1">0</p>
+            <p id="name1" aria-label="player card character name">0</p>
             <table>
                 <tr>
                     <th>Fear Factor</th>
@@ -56,11 +56,11 @@
             </table>
         </div>
         <div class="activecard" id="computercard">
-            <picture class="cardimage">
+            <picture class="cardimage" aria-label="current computer card image">
                 <source media="(max-width: 799px)" srcset="assets/images/alien-cardpic.png" width="1" height="1">
                 <img src="assets/images/alien-cardpic.png" alt="working resize test" width="1" height="1">
                 </picture>
-            <p id="name2"></p>
+            <p id="name2" aria-label="computer card character name"></p>
             <table class="computertable">
                 <tr>
                     <th class="computervalue">Fear Factor</th>
