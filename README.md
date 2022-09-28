@@ -145,6 +145,7 @@ The subject matter is famous horror film villains.
 -----------------------------------------
    
 * ## GAME PAGE
+
 * ### FULL SIZE SITE
 * The meat and potatoes (so to speak) of the project rests here. This went through numerous itertions. 
 * The full size version was easier to design, it simply needed the two cards to be displayed in the game area side by side with the computers card hidden.
@@ -171,6 +172,13 @@ The subject matter is famous horror film villains.
 * ![](assets/images/toptriumps-finaldesign2.png)
 * [Horror Top Trumps Game Page](https://jeffreybull76.github.io/CI_project2/gamepage.html)
 
+* ### THE CARDS
+     * All card info loaded dynamically (see above)
+     * Card displays 1 image inside picture element this allows for dynamic resizing
+     * Has 4 value fields that the user can select
+     * Graphically it remains consistent with the washed out gothic horror feeling
+* ![](assets/images/toptriumps-cardexample.png)
+
 
 * ### SMALL SCREEN SITE
 * The only real change for the mobile version is in display layout. 
@@ -183,6 +191,7 @@ The subject matter is famous horror film villains.
 
 * ### Future roadmap
 
+* More time is need to make the values more competitive. This would require a significant amount of testing to make the game harder to win (and lose) by simply selecting the highest or lowest values. A spreadsheet would be needed to compare all values. Very possible if time consuming, but felt beyond the scope of this project.
 * I intended to add sound effects, preferably specific to each character which would play on win or lose. This was beyond the scope of the project in terms of the time I had.
 * Clean up the JS and make the functions more concise.
 * Another possible feature would be a dealing animation which displayed the cards in both players decks. This would have significantly increased the workload to produce the finished game. Also it would have made the mobile version more difficult to display or simply be redundant on small screens. But it is something to consider.
