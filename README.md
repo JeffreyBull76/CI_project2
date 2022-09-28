@@ -67,8 +67,8 @@ The subject matter is famous horror film villains.
    
    * ## Rough Test Version
    ![](assets/images/toptriumps-earlyconcept.png)
-   [Link to live site](https://jeffreybull76.github.io/Card_Array_Test/)
-   [Link to git repo](https://github.com/JeffreyBull76/Card_Array_Test)
+   * [Link to live site](https://jeffreybull76.github.io/Card_Array_Test/)
+   * [Link to git repo](https://github.com/JeffreyBull76/Card_Array_Test)
    
    
    * The above is the first very rough mock up of how the game page might look. 
@@ -130,12 +130,26 @@ The subject matter is famous horror film villains.
 ## Features
 
 * ### Landing page 
+* Full size landing page 
 ![](assets/images/toptriumps-finaldesign.png)
 [Horror Top Trumps Landing Page](https://jeffreybull76.github.io/CI_project2/)
+* Mobile size landing page 
+![](assets/images/toptriumps-finaldesignmob.png)
+
+* An early decision was made to have two simple versions of the site across all browsers. As the images used are all detailed raster graphics I needed to avoid ugly resizing. I felt a mobile or 'small screen' version under 768px in size and a single layout for all screen sizes above that was best.
+* The site was designed mobile first and then a media query is used to restyle elements on larger screens. 
+* I Received feedback on various early drafts about making the rules clearer. Hopefully the final design conveys the rules of the game in a more concise way.
+* As this page is mostly static I encountered very few problems coding it. Fixed sizes were used to minimise scaling and display issues.
    
 * ### Game page
+* Full size Game page 
 ![](assets/images/toptriumps-finaldesign2.png)
-[Horror Top Trumps Landing Page](https://jeffreybull76.github.io/CI_project2/gamepage.html)
+* [Horror Top Trumps Game Page](https://jeffreybull76.github.io/CI_project2/gamepage.html)
+* Mobile size landing page 
+![](assets/images/toptriumps-finaldesignmob2.png)
+
+
+* The meat and potatoes (so to speak) of the project rests here. This
 
 * ### Future roadmap
 
