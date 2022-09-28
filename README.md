@@ -167,6 +167,7 @@ The subject matter is famous horror film villains.
 * Early test version used a simple timeout function to deal a new card after a few seconds of selecting a field as seen [HERE](https://jeffreybull76.github.io/Card_Array_Test/) this was suboptimal as it meant the user lacked control over their experience.
 * In the live version a hidden popup div is used (centered and invisible on page load) which then displays when each card battle occurs, this unhides the popup allowing the user to progress the game. 
 * This same popup is used at game over to run a new game (simply reloading the page)
+* Early version of the game saw both players play until all cards were exhausted. On advice from my mentor this was altered to be the first to 21, which is an unassailable score for either side. 
 * ![](assets/images/toptriumps-finaldesign2.png)
 * [Horror Top Trumps Game Page](https://jeffreybull76.github.io/CI_project2/gamepage.html)
 
@@ -221,12 +222,14 @@ The subject matter is famous horror film villains.
    * See output for lighthouse tests on each page
 
   *  Landing Page
-  *  ![]()
+  *  ![](assets/images/toptriumps-lighthouse1.png)
    
   *  Game page
-  *  ![]()
+  *  ![](assets/images/toptriumps-lighthouse2.png)
+  *  Low performance due to cache of images and PNG format, possible to fix in future but is acceptable for this version.
    
 * ### Unfixed bugs
+* No known unfixed bugs I am aware of
 
 [Go back](<#table-of-contents>)
 -----------------------------------------
@@ -256,13 +259,15 @@ The subject matter is famous horror film villains.
 -----------------------------------------
 
 * ## Content
-* ADD DETAILS OF SITE CONTENT HERE 
+* Sites content uses various images of horror film characters, these are obviously registered TMs and as such cannot be used for any form of income or resale. Only used for the project as its not a site intended for general use.
+* The images generated in [Midjourney](https://www.midjourney.com/home/) AI are all under creatvie commons license.
+* The following git repo was used to generate the text outlines [LINK](http://owumaro.github.io/text-stroke-generator/)
 
 [Go back](<#table-of-contents>)
 -----------------------------------------
 
 * ## Final Thoughts
-* THANK YOUS, THOUGHTS, GENERAL COMMENTS
+* Thank you and big shout outs to my mentor for his ongoing advice, which helped refine the project into something more coherent and usable. Also the slack community members who tested the site and provided feedback.
  
 [Go back](<#table-of-contents>)
 -----------------------------------------
