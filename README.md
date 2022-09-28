@@ -23,7 +23,8 @@ The subject matter is famous horror film villains.
 # [**FINAL DESIGN**](<#final-design-1>)
 
 ## [**Features**](<#features-1>)
-   * [**Navigation**](<#navigation>)
+   * [**Landing Page**](<#landing-page>)
+   * [**Game Page**](<#game-page>)
    * [**Future roadmap**](<#future-roadmap>)
 
 ## [**TECHNOLOGY**](<#technology-1>)
@@ -80,8 +81,8 @@ The subject matter is famous horror film villains.
 
  * ### Typography
  * The fonts chose for the site were
-      * Alice from googlefonts
-      * New Rocker from font squirrel 
+      * Alice from googlefonts - Using the standard embedded code method
+      * New Rocker from font squirrel - This required using their onsite webfont generator and uploading the files to my repo
  * Fonts were chosen to keep in line with the gothic horror feel while remaining readable.
 
 [Go back](<#table-of-contents>)
@@ -109,6 +110,8 @@ The subject matter is famous horror film villains.
    * The text shadows were created using this code generator 
      * [Text shadow generator](http://owumaro.github.io/text-stroke-generator/)
 
+   * Lessons learned - As the functions and interactions of the game becmae more complex from the test to live version, many errors were introduced relating to calling functions in the correct order. I attempted to keep the code as clear as possible from errors, but as I was learning while doing it there are some areas of code are probably far more complex and less concise than is required.
+
 [Go back](<#table-of-contents>)
 -----------------------------------------
 
@@ -116,7 +119,7 @@ The subject matter is famous horror film villains.
 * Git Commits - I attempted to commit often especially with the complexity of the JS      
 * Code Comments - Comments have been added to all files to make future editing easier
 * JS comments - I left fairly verbose comments in to describe the more complex code blocks
-* What I'd do differently
+* What I'd do differently - More so than the first project I feel this one taught me how complex code become and how adding seemingly small features or ideas can exponentially balloon the complexity of said code out of control. This was a very simply 1 page game, I can see clearer than before how a methodical and clear process would be paramount on a project of any real size.
    
 [Go back](<#table-of-contents>)
 -----------------------------------------
@@ -125,7 +128,9 @@ The subject matter is famous horror film villains.
 
 ## Features
 
-* ### Navigation
+* ### Landing page 
+* ### Game page
+* ### Future roadmap
 
 ![]()
 
