@@ -146,17 +146,17 @@ The subject matter is famous horror film villains.
    
 * ## GAME PAGE
 * ### FULL SIZE SITE
-* The meat and potatoes (so to speak) of the project rests here. This went through numerous ittertions. 
+* The meat and potatoes (so to speak) of the project rests here. This went through numerous itertions. 
 * The full size version was easier to design, it simply needed the two cards to be displayed in the game area side by side with the computers card hidden.
-* Two simple floated score areas site at the top with a centered background.
+* Two simple floated score areas sit at the top with a centered background.
 * The cards themselves are pulled from the array loaded in a separate JS file.
 * This was achieved with a mixture of CSS styles and template literals passed by the JS code to the live page on user interaction.
 * ### THE GAME ITSELF
      * On load the array of cards is randomly shuffled and then spliced into two decks of 20, these are held in two arrays the player and computer deck.
      * Once done the 'add listeners' function runs. It first sets the active field with a fairly simple function, this was done to prevent multiple fields being clicked. By having the active field stored in its own variable I was able to isolate the players selection, then remove the listeners until a new card was dealt.
-     * Once the on click listeners are added it runs the 'play cards' function which simply check for a win condition (and removes all values if true) or deals a new card.
+     * Once the on click listeners run the 'play cards' functione executes, which simply checks for a win condition (and removes all values if true) or deals a new card.
      * It loads the values of those cards into the HTML so the player can see their card. Also this 'hides' the computers card setting its 'hidden' values to true. 
-         * Within this a template literal was used for loading responsive images which changed based on browser size. The play cards function in simple terms just deals the next card or flips both card face down when the game is over
+         * Within this a template literal was used for loading responsive images which changed based on browser size. The play cards function in simple terms just deals the next card or flips both cards face down when the game is over
      * Each round starts when the player selects a number. It uses listeneres on each field to return a value to a corresponding function.
      * It then runs a function which returns the clicked value to two variables 'FieldP' and 'FieldC' these are the values which are used to battle each other.
          * It then unhides the computers card and runs the battle function. This in simple terms simply checks which value wins. It also importantly removes the listeners from all fields. This prevents simply spam clicking the fields while the game is paused and means the player must advance the game to continue.
@@ -207,27 +207,27 @@ The subject matter is famous horror film villains.
 * ## Testing
 
 * ### W3C HTML
-* All pages passed validation
-* [Landing page validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjeffreybull76.github.io%2FCI_project2%2F)
-* [Game page validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjeffreybull76.github.io%2FCI_project2%2Fgamepage.html)
+     * All pages passed validation
+     * [Landing page validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjeffreybull76.github.io%2FCI_project2%2F)
+     * [Game page validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjeffreybull76.github.io%2FCI_project2%2Fgamepage.html)
 
 * ### JIGSAW CSS
-* [CSS validation](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjeffreybull76.github.io%2FCI_project2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+     * [CSS validation](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjeffreybull76.github.io%2FCI_project2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 * ### JSHINT
-* The only isses returned were multiple instances of 'available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)'
-* To make this code work in older versions felt beyond the scope of this project
-* All other code returned with no errors.
+     * The only isses returned were multiple instances of 'available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)'
+     * To make this code work in older versions felt beyond the scope of this project
+     * All other code returned with no errors.
 
 * ### Lighthouse
    * See output for lighthouse tests on each page
 
-  *  Landing Page
-  *  ![](assets/images/toptriumps-lighthouse1.png)
+   *  Landing Page
+   *  ![](assets/images/toptriumps-lighthouse1.png)
    
-  *  Game page
-  *  ![](assets/images/toptriumps-lighthouse2.png)
-  *  Low performance due to cache of images and PNG format, possible to fix in future but is acceptable for this version.
+   *  Game page
+   *  ![](assets/images/toptriumps-lighthouse2.png)
+   *  Low performance due to cache of images and PNG format, possible to fix in future but is acceptable for this version.
    
 * ### Unfixed bugs
 * No known unfixed bugs I am aware of
